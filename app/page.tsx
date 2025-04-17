@@ -3,6 +3,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect } from "react"
+
+
 // Agregar después de los imports
 import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf } from "lucide-react"
 
@@ -42,30 +44,30 @@ export default function LandingPage() {
           <div className="flex items-center gap-2">
             <div className="relative h-10 w-10 overflow-hidden rounded-full bg-green-100">
               <Image
-                src="/coop.png?height=40&width=40"
+                src="/wireframe.png?height=40&width=40"
                 alt="Logo"
                 width={40}
                 height={40}
                 className="object-cover"
               />
             </div>
-            <span className="text-xl font-bold text-green-800">Cooperativa Mujeres en Desarrollo</span>
+            <span className="text-xl font-bold text-green-800">Agropecuaria de Servicios Las Perlas Del Horno R.L.</span>
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
               <li>
-                <Link href="#cafe" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
-                  Café
+                <Link href="#jamaica" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
+                  Jamaica
+                </Link>
+              </li>
+              <li>
+                <Link href="#miel" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
+                  Miel de abeja
                 </Link>
               </li>
               <li>
                 <Link href="#granos" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
                   Granos Básicos
-                </Link>
-              </li>
-              <li>
-                <Link href="#hortalizas" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
-                  Hortalizas
                 </Link>
               </li>
               <li>
@@ -198,8 +200,7 @@ export default function LandingPage() {
                   Productos Agrícolas de <span className="text-green-600">Estelí</span>
                 </h1>
                 <p className="text-lg text-gray-600 mb-8 max-w-lg">
-                  Descubre la excelencia agrícola del norte de Nicaragua: café de altura, granos básicos tradicionales y
-                  hortalizas frescas.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link
@@ -224,21 +225,21 @@ export default function LandingPage() {
                   {/* Main Image - Coffee */}
                   <div className="col-span-4 row-span-5 rounded-2xl overflow-hidden shadow-lg relative">
                     <Image
-                      src="/cafe.jpg?height=600&width=400"
+                      src="/wireframe.png?height=600&width=400"
                       alt="Café de Estelí"
                       fill
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1.5 text-sm font-medium text-green-800">
-                      Café Premium
+                      Test
                     </div>
                   </div>
 
                   {/* Top Right Image - Grains */}
                   <div className="col-span-2 row-span-2 rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/hortalizas.jpg?height=200&width=200"
+                      src="/wireframe.png?height=200&width=200"
                       alt="Granos de Estelí"
                       width={200}
                       height={200}
@@ -249,7 +250,7 @@ export default function LandingPage() {
                   {/* Bottom Right Image - Vegetables */}
                   <div className="col-span-2 row-span-3 rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/granos.jpg?height=300&width=200"
+                      src="/wireframe.png?height=300&width=200"
                       alt="Hortalizas de Estelí"
                       width={200}
                       height={300}
@@ -287,8 +288,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Nuestra Selección Premium</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Descubre nuestros productos más exclusivos, cultivados con técnicas tradicionales y sostenibles en las
-                tierras fértiles de Estelí.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
               </p>
             </div>
 
@@ -297,7 +297,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-80 w-full overflow-hidden">
                   <Image
-                    src="/cafe-oro.jpeg?height=600&width=800"
+                    src="/wireframe.png?height=600&width=800"
                     alt="Café Oro Premium"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -317,8 +317,7 @@ export default function LandingPage() {
                   </div>
                   <h3 className="mb-3 text-xl font-bold text-gray-900">Café de Oro Premium</h3>
                   <p className="mb-4 text-gray-600">
-                    Nuestro café de especialidad cultivado a más de 1,400 metros sobre el nivel del mar, con notas de
-                    chocolate, caramelo y frutas cítricas.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-green-700">$18.99 / lb</span>
@@ -336,7 +335,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-80 w-full overflow-hidden">
                   <Image
-                    src="/frijoles.jpg?height=600&width=800"
+                    src="/wireframe.png?height=600&width=800"
                     alt="Frijoles Orgánicos"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -356,8 +355,7 @@ export default function LandingPage() {
                   </div>
                   <h3 className="mb-3 text-xl font-bold text-gray-900">Frijoles Rojos Orgánicos</h3>
                   <p className="mb-4 text-gray-600">
-                    Frijoles rojos cultivados sin químicos, con certificación orgánica. Sabor auténtico y textura
-                    perfecta para platos tradicionales.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-green-700">$4.99 / lb</span>
@@ -375,7 +373,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-80 w-full overflow-hidden">
                   <Image
-                    src="/tomates.jpg?height=600&width=800"
+                    src="/wireframe.png?height=600&width=800"
                     alt="Tomates Cherry Orgánicos"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -395,8 +393,7 @@ export default function LandingPage() {
                   </div>
                   <h3 className="mb-3 text-xl font-bold text-gray-900">Tomates Cherry Orgánicos</h3>
                   <p className="mb-4 text-gray-600">
-                    Tomates cherry cultivados en invernaderos ecológicos. Dulces, jugosos y perfectos para ensaladas
-                    gourmet.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-green-700">$3.49 / lb</span>
@@ -432,7 +429,7 @@ export default function LandingPage() {
               <Link href="#cafe" className="group">
                 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="/cafeejemplo.jpg?height=800&width=600"
+                    src="/wireframe.png?height=800&width=600"
                     alt="Café"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -456,7 +453,7 @@ export default function LandingPage() {
               <Link href="#granos" className="group">
                 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="/granosbasicosejemplo.jpg?height=800&width=600"
+                    src="/wireframe.png?height=800&width=600"
                     alt="Granos Básicos"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -480,7 +477,7 @@ export default function LandingPage() {
               <Link href="#hortalizas" className="group">
                 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="/hortalizasejemplo.jpg?height=800&width=600"
+                    src="/wireframe.png?height=800&width=600"
                     alt="Hortalizas"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -512,8 +509,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Café de Estelí</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Nuestro café es cultivado en altitudes superiores a los 1,200 metros sobre el nivel del mar, lo que le
-                confiere características únicas de sabor y aroma.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
               </p>
             </div>
 
@@ -566,7 +562,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/cafetipo1.jpg?height=400&width=600"
+                    src="/wireframe.png?height=400&width=600"
                     alt="Café Arábica"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -585,8 +581,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   </div>
                   <p className="mb-4 text-sm text-gray-600">
-                    Café de altura con notas de chocolate, caramelo y frutas cítricas. Cultivado bajo sombra en las
-                    montañas de Miraflor.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-amber-700">$12.99 / lb</span>
@@ -601,7 +596,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/cafetipo2.jpg?height=400&width=600"
+                    src="/wireframe.png?height=400&width=600"
                     alt="Café Orgánico"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -620,8 +615,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 text-gray-300" />
                   </div>
                   <p className="mb-4 text-sm text-gray-600">
-                    Cultivado sin químicos, con certificación orgánica. Sabor equilibrado con notas de nueces y
-                    caramelo.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-amber-700">$14.99 / lb</span>
@@ -636,7 +630,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/cafetipo3.jpg?height=400&width=600"
+                    src="/wireframe.png?height=400&width=600"
                     alt="Café Honey"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -653,8 +647,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   </div>
                   <p className="mb-4 text-sm text-gray-600">
-                    Procesado con el método honey, que conserva parte del mucílago. Sabor dulce con notas de frutas
-                    tropicales.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-amber-700">$16.99 / lb</span>
@@ -669,7 +662,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/cafetipo4.jpg?height=400&width=600"
+                    src="/wireframe.png?height=400&width=600"
                     alt="Café Bourbon"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -688,8 +681,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 text-gray-300" />
                   </div>
                   <p className="mb-4 text-sm text-gray-600">
-                    Variedad Bourbon cultivada a 1,500 metros. Sabor complejo con notas de chocolate negro, cereza y un
-                    toque de especias.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-amber-700">$18.99 / lb</span>
@@ -722,8 +714,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Granos Básicos</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Los granos básicos de Estelí son cultivados por pequeños productores que mantienen vivas las tradiciones
-                agrícolas de la región, utilizando técnicas sostenibles y respetuosas con el medio ambiente.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, fugit beatae? Necessitatibus, facilis totam dolore sequi cupiditate voluptatibus in labore officia, porro quae reiciendis qui ad sapiente reprehenderit corrupti aspernatur.
               </p>
             </div>
 
@@ -733,12 +724,12 @@ export default function LandingPage() {
                 {/* Grain Product 1 */}
                 <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
                   <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/frijoles.jpg?height=200&width=200" alt="Frijol Rojo" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=200&width=200" alt="Frijol Rojo" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
                     <h3 className="mb-2 text-lg font-bold text-gray-900">Frijol Rojo</h3>
                     <p className="mb-3 text-sm text-gray-600">
-                      Frijol rojo tradicional nicaragüense, con excelente sabor y textura. Ideal para gallo pinto y otros platos típicos.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam adipisci eius magni, accusamus corporis corrupti aliquam, voluptatibus atque dolor velit explicabo, nam numquam! Veritatis incidunt amet, sed inventore in vel?
                     </p>
                     <div className="flex items-center justify-between">
                       <span className="text-base font-bold text-yellow-700">$2.99 / lb</span>
@@ -752,12 +743,12 @@ export default function LandingPage() {
                 {/* Grain Product 2 */}
                 <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
                   <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/maiz.jpg?height=200&width=200" alt="Maíz Criollo" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=200&width=200" alt="Maíz Criollo" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
                     <h3 className="mb-2 text-lg font-bold text-gray-900">Maíz Criollo</h3>
                     <p className="mb-3 text-sm text-gray-600">
-                      Maíz de variedades locales, perfecto para tortillas, tamales y otros platillos tradicionales.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                     </p>
                     <div className="flex items-center justify-between">
                       <span className="text-base font-bold text-yellow-700">$1.99 / lb</span>
@@ -771,12 +762,12 @@ export default function LandingPage() {
                 {/* Grain Product 3 */}
                 <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
                   <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/arroz.jpg?height=200&width=200" alt="Arroz de Secano" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=200&width=200" alt="Arroz de Secano" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
                     <h3 className="mb-2 text-lg font-bold text-gray-900">Arroz de Secano</h3>
                     <p className="mb-3 text-sm text-gray-600">
-                      Arroz cultivado con técnicas tradicionales, con excelente rendimiento y sabor característico.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                     </p>
                     <div className="flex items-center justify-between">
                       <span className="text-base font-bold text-yellow-700">$2.49 / lb</span>
@@ -790,12 +781,12 @@ export default function LandingPage() {
                 {/* Grain Product 4 */}
                 <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
                   <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/sorgo.jpg?height=200&width=200" alt="Sorgo" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=200&width=200" alt="Sorgo" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
                     <h3 className="mb-2 text-lg font-bold text-gray-900">Sorgo</h3>
                     <p className="mb-3 text-sm text-gray-600">
-                      Cereal resistente a la sequía, utilizado para alimentación animal y elaboración de productos tradicionales.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                     </p>
                     <div className="flex items-center justify-between">
                       <span className="text-base font-bold text-yellow-700">$1.79 / lb</span>
@@ -812,7 +803,7 @@ export default function LandingPage() {
                 {/* Imagen grande 1 */}
                 <div className="relative overflow-hidden rounded-2xl">
                   <Image
-                    src="/granosmaiz.jpg"
+                    src="/wireframe.png"
                     alt="Granos Básicos"
                     width={800}
                     height={600}
@@ -823,7 +814,7 @@ export default function LandingPage() {
                 {/* Imagen grande 2 (Debajo de la primera) */}
                 <div className="relative overflow-hidden rounded-2xl">
                   <Image
-                    src="/granosfrijoles.jpg"
+                    src="/wireframe.png"
                     alt="Granos Básicos Adicional"
                     width={800}
                     height={600}
@@ -845,8 +836,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Hortalizas</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Las hortalizas de Estelí son conocidas por su frescura y calidad. Cultivadas en los fértiles valles de
-                la región, ofrecen sabores auténticos y nutritivos.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo doloremque id odio, exercitationem corporis sequi ad eos ipsum facere dolores vero nisi distinctio! Dolorem odit consectetur aspernatur animi cum? Veritatis!
               </p>
             </div>
 
@@ -855,7 +845,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/tomates-pony.jpg?height=400&width=600"
+                    src="/wireframe.png?height=400&width=600"
                     alt="Tomates Orgánicos"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -874,7 +864,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   </div>
                   <p className="mb-4 text-sm text-gray-600">
-                    Tomates cultivados sin químicos, con sabor intenso y dulce. Ideales para ensaladas y salsas.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at doloremque laudantium optio deserunt minima repellendus, quidem ut nihil ullam.
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-green-700">$1.99 / lb</span>
@@ -889,7 +879,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/cebollasvar.jpg?height=400&width=600"
+                    src="/wireframe.png?height=400&width=600"
                     alt="Cebollas"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -908,8 +898,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 text-gray-300" />
                   </div>
                   <p className="mb-4 text-sm text-gray-600">
-                    Cebollas dulces y aromáticas, cultivadas en los valles de Estelí. Perfectas para todo tipo de
-                    platillos.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-green-700">$1.49 / lb</span>
@@ -924,7 +913,7 @@ export default function LandingPage() {
               <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/chiltoma.jpg?height=400&width=600"
+                    src="/wireframe.png?height=400&width=600"
                     alt="Chiltomas (Pimientos)"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -943,8 +932,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 text-gray-300" />
                   </div>
                   <p className="mb-4 text-sm text-gray-600">
-                    Pimientos dulces tradicionales de Nicaragua, con excelente sabor y color. Ideales para sofritos y
-                    rellenos.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-green-700">$1.79 / lb</span>
@@ -961,21 +949,20 @@ export default function LandingPage() {
               <div className="overflow-hidden rounded-2xl bg-white p-6 shadow-md">
                 <h3 className="mb-4 text-xl font-bold text-gray-900">Hortalizas de Hoja Verde</h3>
                 <p className="mb-6 text-gray-600">
-                  Nuestra colección de hortalizas de hoja verde incluye lechuga, espinaca, col y más, todas cultivadas
-                  con técnicas sostenibles.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/berenjena.jpg?height=300&width=300" alt="Lechuga" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Lechuga" fill className="object-cover" />
                   </div>
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/apio.jpg?height=300&width=300" alt="Espinaca" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Espinaca" fill className="object-cover" />
                   </div>
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/repollo.jpg?height=300&width=300" alt="Col" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Col" fill className="object-cover" />
                   </div>
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/chile2.jpg?height=300&width=300" alt="Acelga" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Acelga" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="mt-6">
@@ -990,21 +977,20 @@ export default function LandingPage() {
               <div className="overflow-hidden rounded-2xl bg-white p-6 shadow-md">
                 <h3 className="mb-4 text-xl font-bold text-gray-900">Tubérculos y Raíces</h3>
                 <p className="mb-6 text-gray-600">
-                  Nuestra selección de tubérculos incluye papas, zanahorias, remolachas y más, todos cultivados en los
-                  fértiles suelos de Estelí.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/rabano.jpg?height=300&width=300" alt="Papas" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Papas" fill className="object-cover" />
                   </div>
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/yuca.jpg?height=300&width=300" alt="Zanahorias" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Zanahorias" fill className="object-cover" />
                   </div>
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/zanahoria.jpg?height=300&width=300" alt="Remolachas" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Remolachas" fill className="object-cover" />
                   </div>
                   <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/papa.jpg?height=300&width=300" alt="Yuca" fill className="object-cover" />
+                    <Image src="/wireframe.png?height=300&width=300" alt="Yuca" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="mt-6">
@@ -1023,7 +1009,7 @@ export default function LandingPage() {
       <div 
         className="relative w-full max-w-4xl overflow-hidden rounded-2xl"
         style={{
-          backgroundImage: "url('/papa.jpg')", // Imagen de fondo
+          backgroundImage: "url('/wireframe.png')", // Imagen de fondo
           backgroundSize: "cover", 
           backgroundPosition: "center",
           height: "400px" // Ajuste de altura
@@ -1047,8 +1033,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Nuestras Certificaciones</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Nuestros productos cuentan con certificaciones que garantizan su calidad, sostenibilidad y
-                responsabilidad social.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque illo numquam minus? Quod provident deserunt quisquam fuga cupiditate incidunt itaque ut omnis. Omnis nesciunt quas suscipit facilis, recusandae odio!
               </p>
             </div>
 
@@ -1065,8 +1050,7 @@ export default function LandingPage() {
                 </div>
                 <h3 className="mb-3 text-xl font-bold text-gray-900">Certificación Orgánica</h3>
                 <p className="text-gray-600">
-                  Nuestros productos orgánicos están certificados por organismos internacionales que garantizan que han
-                  sido cultivados sin el uso de pesticidas ni fertilizantes químicos.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis alias nesciunt voluptas quae atque vitae saepe veniam, debitis dolorum. Voluptate dicta aperiam reprehenderit autem blanditiis, ipsam omnis tempora impedit.
                 </p>
               </div>
 
@@ -1077,8 +1061,7 @@ export default function LandingPage() {
                 </div>
                 <h3 className="mb-3 text-xl font-bold text-gray-900">Comercio Justo</h3>
                 <p className="text-gray-600">
-                  Trabajamos bajo los principios del comercio justo, asegurando precios justos para nuestros
-                  agricultores y condiciones laborales dignas.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at aperiam veritatis! Ut harum aliquam inventore ad, in dolorem perspiciatis molestias aliquid totam similique, natus facilis reiciendis eum hic nisi.
                 </p>
               </div>
 
@@ -1089,8 +1072,7 @@ export default function LandingPage() {
                 </div>
                 <h3 className="mb-3 text-xl font-bold text-gray-900">Rainforest Alliance</h3>
                 <p className="text-gray-600">
-                  Nuestro café cuenta con la certificación Rainforest Alliance, que promueve la conservación de la
-                  biodiversidad y los medios de vida sostenibles.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias repellendus numquam expedita doloremque debitis nobis omnis dignissimos nisi officiis, blanditiis obcaecati.
                 </p>
               </div>
             </div>
@@ -1106,7 +1088,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold md:text-5xl">Lo Que Dicen Nuestros Clientes</h2>
               <p className="mx-auto max-w-3xl text-lg text-green-100">
-                Descubre por qué nuestros productos son apreciados por clientes de todo el mundo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
               </p>
             </div>
 
@@ -1122,8 +1104,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="mb-4 text-green-100">
-                  "El café de Estelí ha transformado mi negocio. Mis clientes notan la diferencia y siempre preguntan de
-                  dónde viene este café tan especial. La calidad y consistencia son excepcionales."
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni saepe exercitationem accusantium alias corporis dolorem nostrum odit distinctio, perferendis voluptatibus rerum nobis officia sint architecto repellat voluptates! Exercitationem, recusandae illo?."
                 </p>
                 <div className="flex items-center gap-1">
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
@@ -1145,8 +1126,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="mb-4 text-green-100">
-                  "Las hortalizas de Estelí son incomparables en frescura y sabor. Han elevado la calidad de mis platos
-                  y mis clientes lo notan. Además, me encanta apoyar a productores que trabajan de manera sostenible."
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, eveniet amet accusamus enim iure omnis odit, maiores atque ad assumenda commodi numquam quidem corrupti quo unde, dolor doloribus optio modi."
                 </p>
                 <div className="flex items-center gap-1">
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
@@ -1166,8 +1146,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="mb-4 text-green-100">
-                  "Llevo años importando granos básicos de Estelí y la calidad siempre es consistente. Mis clientes en
-                  Europa aprecian el sabor auténtico y la historia detrás de cada producto."
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eveniet amet accusamus enim iure omnis odit, maiores atque ad assumenda commodi numquam quidem corrupti quo unde, dolor doloribus optio modi."
                 </p>
                 <div className="flex items-center gap-1">
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
@@ -1302,7 +1281,7 @@ export default function LandingPage() {
                         </div>
                         <div>
                           <h4 className="text-lg font-medium text-gray-900">Teléfono</h4>
-                          <p className="text-gray-600">+505 2713 5492</p>
+                          <p className="text-gray-600">+505 0000 0000</p>
                         </div>
                       </div>
 
@@ -1533,6 +1512,36 @@ export default function LandingPage() {
               </form>
             </div>
           </div>
+
+          {/* Botón flotante de WhatsApp con tooltip */}
+          <div className="fixed bottom-6 right-6 z-50">
+            <div className="group relative">
+              <div className="absolute -right-2 bottom-full mb-2 hidden w-max rounded-lg bg-gray-900 px-3 py-2 text-sm text-white group-hover:block">
+            ¡Contáctanos por WhatsApp!
+      <svg className="absolute left-0 top-full h-2 w-full text-gray-900" x="0px" y="0px" viewBox="0 0 255 255">
+        <polygon className="fill-current" points="0,0 127.5,127.5 255,0" />
+      </svg>
+    </div>
+    <Link
+      href="https://wa.me/50578841792" // Reemplaza con tu número
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-medium text-white shadow-lg transition-all hover:bg-green-600 hover:shadow-xl"
+    >
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" 
+        height="24" 
+        viewBox="0 0 24 24" 
+        fill="currentColor" 
+        className="h-6 w-6"
+      >
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span className="hidden sm:inline">WhatsApp</span>
+    </Link>
+  </div>
+</div>
 
           <div className="mt-12 border-t border-gray-800 pt-8">
             <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
