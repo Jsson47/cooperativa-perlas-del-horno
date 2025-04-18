@@ -127,7 +127,7 @@ export default function LandingPage() {
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Café
+                      Jamaica
                     </Link>
                   </li>
                   <li>
@@ -136,7 +136,7 @@ export default function LandingPage() {
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Granos Básicos
+                      Miel de abeja
                     </Link>
                   </li>
                   <li>
@@ -145,7 +145,7 @@ export default function LandingPage() {
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Hortalizas
+                      Granos Básicos
                     </Link>
                   </li>
                   <li>
@@ -315,7 +315,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <span className="ml-2 text-xs text-gray-500">(128 reseñas)</span>
                   </div>
-                  <h3 className="mb-3 text-xl font-bold text-gray-900">Café de Oro Premium</h3>
+                  <h3 className="mb-3 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
                   <p className="mb-4 text-gray-600">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
@@ -353,7 +353,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 text-gray-300" />
                     <span className="ml-2 text-xs text-gray-500">(94 reseñas)</span>
                   </div>
-                  <h3 className="mb-3 text-xl font-bold text-gray-900">Frijoles Rojos Orgánicos</h3>
+                  <h3 className="mb-3 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
                   <p className="mb-4 text-gray-600">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
@@ -391,7 +391,7 @@ export default function LandingPage() {
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <span className="ml-2 text-xs text-gray-500">(76 reseñas)</span>
                   </div>
-                  <h3 className="mb-3 text-xl font-bold text-gray-900">Tomates Cherry Orgánicos</h3>
+                  <h3 className="mb-3 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
                   <p className="mb-4 text-gray-600">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                   </p>
@@ -439,8 +439,8 @@ export default function LandingPage() {
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
                       <Coffee className="h-8 w-8" />
                     </div>
-                    <h3 className="mb-2 text-2xl font-bold text-white">Café</h3>
-                    <p className="mb-4 text-gray-200">Café de altura con sabores únicos y aromas intensos.</p>
+                    <h3 className="mb-2 text-2xl font-bold text-white">Jamaica</h3>
+                    <p className="mb-4 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <span className="inline-flex items-center text-sm font-medium text-white">
                       Explorar
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -463,8 +463,8 @@ export default function LandingPage() {
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
                       <Wheat className="h-8 w-8" />
                     </div>
-                    <h3 className="mb-2 text-2xl font-bold text-white">Granos Básicos</h3>
-                    <p className="mb-4 text-gray-200">Frijoles, maíz y arroz de la mejor calidad.</p>
+                    <h3 className="mb-2 text-2xl font-bold text-white">Miel de abeja</h3>
+                    <p className="mb-4 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <span className="inline-flex items-center text-sm font-medium text-white">
                       Explorar
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -487,8 +487,8 @@ export default function LandingPage() {
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
                       <Leaf className="h-8 w-8" />
                     </div>
-                    <h3 className="mb-2 text-2xl font-bold text-white">Hortalizas</h3>
-                    <p className="mb-4 text-gray-200">Hortalizas frescas y orgánicas de los valles de Estelí.</p>
+                    <h3 className="mb-2 text-2xl font-bold text-white">Granos Básicos</h3>
+                    <p className="mb-4 text-gray-200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia iste, distinctio</p>
                     <span className="inline-flex items-center text-sm font-medium text-white">
                       Explorar
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -505,9 +505,9 @@ export default function LandingPage() {
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
               <span className="inline-block rounded-full bg-amber-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-amber-800 mb-4">
-                Café de Altura
+                " " de altura
               </span>
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Café de Estelí</h2>
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Jamaica</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
               </p>
@@ -532,7 +532,7 @@ export default function LandingPage() {
                   }`}
                   onClick={() => setActiveTab("arabica")}
                 >
-                  Arábica
+                  Tipo de " "
                 </button>
                 <button
                   className={`rounded-full px-5 py-2 text-sm font-medium transition ${
@@ -542,7 +542,7 @@ export default function LandingPage() {
                   }`}
                   onClick={() => setActiveTab("organico")}
                 >
-                  Orgánico
+                  Tipo de " "
                 </button>
                 <button
                   className={`rounded-full px-5 py-2 text-sm font-medium transition ${
@@ -552,7 +552,7 @@ export default function LandingPage() {
                   }`}
                   onClick={() => setActiveTab("especial")}
                 >
-                  Especial
+                  Tipo de " "
                 </button>
               </div>
             </div>
@@ -563,16 +563,16 @@ export default function LandingPage() {
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
                     src="/wireframe.png?height=400&width=600"
-                    alt="Café Arábica"
+                    alt="Café Lorem"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                    Arábica
+                  Lorem
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Café Arábica Miraflor</h3>
+                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -597,16 +597,16 @@ export default function LandingPage() {
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
                     src="/wireframe.png?height=400&width=600"
-                    alt="Café Orgánico"
+                    alt="tipo de"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                    Orgánico
+                  Lorem
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Café Orgánico Certificado</h3>
+                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -636,11 +636,11 @@ export default function LandingPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                    Especial
+                  Lorem
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Café Honey</h3>
+                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -668,11 +668,11 @@ export default function LandingPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                    Premium
+                  Lorem
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Café Bourbon Rojo</h3>
+                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -698,7 +698,7 @@ export default function LandingPage() {
                 href="#"
                 className="inline-flex items-center rounded-full border border-amber-700 px-6 py-3 text-sm font-medium text-amber-700 transition hover:bg-amber-50"
               >
-                Ver Todos los Cafés
+                Ver Todos los Productos
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
@@ -712,7 +712,7 @@ export default function LandingPage() {
               <span className="inline-block rounded-full bg-yellow-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-yellow-800 mb-4">
                 Tradición Agrícola
               </span>
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Granos Básicos</h2>
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Miel de abeja</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, fugit beatae? Necessitatibus, facilis totam dolore sequi cupiditate voluptatibus in labore officia, porro quae reiciendis qui ad sapiente reprehenderit corrupti aspernatur.
               </p>
@@ -727,7 +727,7 @@ export default function LandingPage() {
                     <Image src="/wireframe.png?height=200&width=200" alt="Frijol Rojo" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Frijol Rojo</h3>
+                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                     <p className="mb-3 text-sm text-gray-600">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam adipisci eius magni, accusamus corporis corrupti aliquam, voluptatibus atque dolor velit explicabo, nam numquam! Veritatis incidunt amet, sed inventore in vel?
                     </p>
@@ -746,7 +746,7 @@ export default function LandingPage() {
                     <Image src="/wireframe.png?height=200&width=200" alt="Maíz Criollo" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Maíz Criollo</h3>
+                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                     <p className="mb-3 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                     </p>
@@ -765,7 +765,7 @@ export default function LandingPage() {
                     <Image src="/wireframe.png?height=200&width=200" alt="Arroz de Secano" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Arroz de Secano</h3>
+                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                     <p className="mb-3 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                     </p>
@@ -784,7 +784,7 @@ export default function LandingPage() {
                     <Image src="/wireframe.png?height=200&width=200" alt="Sorgo" fill className="object-cover" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Sorgo</h3>
+                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                     <p className="mb-3 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                     </p>
@@ -828,13 +828,13 @@ export default function LandingPage() {
 
 
         {/* Vegetables Section */}
-        <section id="hortalizas" className="py-24 bg-green-50">
+        <section id="granos" className="py-24 bg-green-50">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
               <span className="inline-block rounded-full bg-green-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-green-800 mb-4">
                 Frescura y Calidad
               </span>
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Hortalizas</h2>
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Granos Básicos</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo doloremque id odio, exercitationem corporis sequi ad eos ipsum facere dolores vero nisi distinctio! Dolorem odit consectetur aspernatur animi cum? Veritatis!
               </p>
@@ -851,11 +851,11 @@ export default function LandingPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-                    Orgánico
+                    Tipo de
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Tomates Orgánicos</h3>
+                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -885,11 +885,11 @@ export default function LandingPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-                    Fresco
+                    Tipo de 
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Cebollas</h3>
+                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -919,11 +919,11 @@ export default function LandingPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-                    Local
+                    Tipo de
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Chiltomas (Pimientos)</h3>
+                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -947,7 +947,7 @@ export default function LandingPage() {
             <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
               {/* Vegetable Collection 1 */}
               <div className="overflow-hidden rounded-2xl bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-xl font-bold text-gray-900">Hortalizas de Hoja Verde</h3>
+                <h3 className="mb-4 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
                 <p className="mb-6 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                 </p>
@@ -975,7 +975,7 @@ export default function LandingPage() {
 
               {/* Vegetable Collection 2 */}
               <div className="overflow-hidden rounded-2xl bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-xl font-bold text-gray-900">Tubérculos y Raíces</h3>
+                <h3 className="mb-4 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
                 <p className="mb-6 text-gray-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
                 </p>
@@ -1057,7 +1057,7 @@ export default function LandingPage() {
               {/* Certification 2 */}
               <div className="rounded-2xl bg-white p-8 shadow-md">
                 <div className="mb-6 h-16 w-16">
-                  <Image src="/comercio.jpg?height=100&width=100" alt="Comercio Justo" width={64} height={64} />
+                  <Image src="/wireframe.png?height=100&width=100" alt="Comercio Justo" width={64} height={64} />
                 </div>
                 <h3 className="mb-3 text-xl font-bold text-gray-900">Comercio Justo</h3>
                 <p className="text-gray-600">
@@ -1435,27 +1435,27 @@ export default function LandingPage() {
               <ul className="space-y-4">
                 <li>
                   <Link href="#cafe" className="text-gray-400 transition hover:text-white">
-                    Café
+                  Lorem Ipsum
                   </Link>
                 </li>
                 <li>
                   <Link href="#granos" className="text-gray-400 transition hover:text-white">
-                    Granos Básicos
+                  Lorem Ipsum
                   </Link>
                 </li>
                 <li>
-                  <Link href="#hortalizas" className="text-gray-400 transition hover:text-white">
-                    Hortalizas
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-400 transition hover:text-white">
-                    Productos Orgánicos
+                  <Link href="#granos" className="text-gray-400 transition hover:text-white">
+                  Lorem Ipsum
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-gray-400 transition hover:text-white">
-                    Productos Especiales
+                  Lorem Ipsum
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-gray-400 transition hover:text-white">
+                  Lorem Ipsum
                   </Link>
                 </li>
               </ul>
