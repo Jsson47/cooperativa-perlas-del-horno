@@ -279,6 +279,182 @@ export default function LandingPage() {
           </div>
         </section>
 
+      {/* Mision Vision */}
+      
+      {/* Mission & Vision Section */}
+<section id="mision-vision" className="py-24 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <div className="mb-16 text-center">
+      <span className="inline-block rounded-full bg-green-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-green-800 mb-4">
+        Nuestra Esencia
+      </span>
+      <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Misión y Visión</h2>
+      <p className="mx-auto max-w-3xl text-lg text-gray-600">
+        Los pilares fundamentales que guían nuestro trabajo diario en Agropecuaria de Servicios Las Perlas Del Horno R.L.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+      {/* Mission Card */}
+      <div className="group overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-xl">
+        <div className="relative h-64 w-full overflow-hidden bg-green-100">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="64" 
+              height="64" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="h-16 w-16 text-green-700"
+            >
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div className="p-8">
+          <h3 className="mb-4 text-2xl font-bold text-gray-900">Nuestra Misión</h3>
+          <p className="text-gray-600">
+          Somos una cooperativa de base Agropecuaria de mujeres campesinas, bridando oportunidades para el desarrollo y empoderamiento de nuestras asociadas, sus familias y la comunidad. Con espacios de participación activa comprometidas con los intereses de las mujeres para liderar cargos vitales para el proceso cooperativo lideradas por mujeres, promoviendo la economía local, popular solidaria, agroecológica. Desde la diversificación de rubros para la generación de ingresos económicos, y la defensa de sus derechos.
+          </p>
+        </div>
+      </div>
+
+      {/* Vision Card */}
+      <div className="group overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-xl">
+        <div className="relative h-64 w-full overflow-hidden bg-green-50">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="64" 
+              height="64" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="h-16 w-16 text-green-700"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+          </div>
+        </div>
+        <div className="p-8">
+          <h3 className="mb-4 text-2xl font-bold text-gray-900">Nuestra Visión</h3>
+          <p className="text-gray-600">
+          Ser una organización capaz de promover el talento humano para el empoderamiento de las mujeres, contribuyendo a las respuestas de las demandas campesinas de inclusión cooperativa líder que apueste por el desarrollo integral de las mujeres campesinas, mediante la autonomía económica, legitimando los procesos cooperativos. Contribuyendo al desarrollo de la comunidad. Las familias y los sujetos asociados para promover la defensa de sus derechos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Values */}
+    <div className="mt-16">
+      <h3 className="mb-8 text-center text-3xl font-bold text-gray-900">Nuestros Valores</h3>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Value 1 */}
+        <div className="rounded-xl bg-white p-6 text-center shadow-md">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
+            <Leaf className="h-8 w-8" />
+          </div>
+          <h4 className="mb-2 text-lg font-bold text-gray-900">Sostenibilidad</h4>
+          <p className="text-gray-600">
+            Compromiso con prácticas agrícolas que preservan los recursos naturales para futuras generaciones.
+          </p>
+        </div>
+
+        {/* Value 2 */}
+        <div className="rounded-xl bg-white p-6 text-center shadow-md">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="h-8 w-8"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h4 className="mb-2 text-lg font-bold text-gray-900">Trabajo en Equipo</h4>
+          <p className="text-gray-600">
+            Valoramos la colaboración y el esfuerzo colectivo para alcanzar objetivos comunes.
+          </p>
+        </div>
+
+        {/* Value 3 */}
+        <div className="rounded-xl bg-white p-6 text-center shadow-md">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="h-8 w-8"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h4 className="mb-2 text-lg font-bold text-gray-900">Calidad</h4>
+          <p className="text-gray-600">
+            Excelencia en cada etapa de nuestro proceso productivo para ofrecer lo mejor a nuestros clientes.
+          </p>
+        </div>
+
+        {/* Value 4 */}
+        <div className="rounded-xl bg-white p-6 text-center shadow-md">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="h-8 w-8"
+            >
+              <path d="M12 2v4"></path>
+              <path d="m16.24 7.76 2.83-2.83"></path>
+              <path d="M18 12h4"></path>
+              <path d="m16.24 16.24 2.83 2.83"></path>
+              <path d="M12 18v4"></path>
+              <path d="m7.76 16.24-2.83 2.83"></path>
+              <path d="M6 12H2"></path>
+              <path d="m7.76 7.76-2.83-2.83"></path>
+            </svg>
+          </div>
+          <h4 className="mb-2 text-lg font-bold text-gray-900">Innovación</h4>
+          <p className="text-gray-600">
+            Adopción de tecnologías y métodos modernos para mejorar continuamente nuestros procesos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
         {/* Featured Products */}
         <section id="productos" className="py-24 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -509,7 +685,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Jamaica</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
+              Rosa de jamaica variedades (Reina Salvadoreña y criolla) en condiciones agroecológicas, garantizando un deshidratado que resalte sus propiedades organolépticas,100 % orgánica implementando las buenas prácticas agrícolas.
               </p>
             </div>
 
@@ -714,7 +890,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Miel de abeja</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, fugit beatae? Necessitatibus, facilis totam dolore sequi cupiditate voluptatibus in labore officia, porro quae reiciendis qui ad sapiente reprehenderit corrupti aspernatur.
+              Miel Multifloral cosechada con buenas prácticas apícolas, garantizando BPM en la cosecha para obtener miel de óptima calidad y libre de peligros físicos, químicos y microbiológicos que puedan perjudicar la salud de las personas y de las propias abejas.
               </p>
             </div>
 
@@ -836,7 +1012,7 @@ export default function LandingPage() {
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Granos Básicos</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo doloremque id odio, exercitationem corporis sequi ad eos ipsum facere dolores vero nisi distinctio! Dolorem odit consectetur aspernatur animi cum? Veritatis!
+              Granos básicos (Maíz, Frijol, sorgo) impulsando el rescate de las semillas criollas bajo prácticas agroecológicas y la soberanía alimentaria nutricional.
               </p>
             </div>
 
