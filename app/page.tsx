@@ -677,7 +677,7 @@ export default function LandingPage() {
         </section>
 
         {/* Coffee Section */}
-        <section id="cafe" className="py-24 bg-[#f8f5f1]">
+        <section id="jamaica" className="py-24 bg-[#f8f5f1]">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
               <span className="inline-block rounded-full bg-amber-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-amber-800 mb-4">
@@ -881,8 +881,8 @@ export default function LandingPage() {
           </div>
         </section>
 
-    {/* Basic Grains Section */}
-        <section id="granos" className="py-24">
+    {/* Miel Section */}
+        <section id="miel" className="py-24">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
               <span className="inline-block rounded-full bg-yellow-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-yellow-800 mb-4">
