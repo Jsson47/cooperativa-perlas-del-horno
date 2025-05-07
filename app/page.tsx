@@ -454,8 +454,8 @@ export default function LandingPage() {
 </section>
 
 
-
-        {/* Featured Products */}
+{/* 
+        Featured Products
         <section id="productos" className="py-24 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
@@ -466,11 +466,11 @@ export default function LandingPage() {
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
               </p>
-            </div>
+            </div> */}
 
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"> */}
               {/* Featured Product 1 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+              {/* <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-80 w-full overflow-hidden">
                   <Image
                     src="/wireframe.png?height=600&width=800"
@@ -505,10 +505,10 @@ export default function LandingPage() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Featured Product 2 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+              {/* <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-80 w-full overflow-hidden">
                   <Image
                     src="/wireframe.png?height=600&width=800"
@@ -543,10 +543,10 @@ export default function LandingPage() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Featured Product 3 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+              {/* <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
                 <div className="relative h-80 w-full overflow-hidden">
                   <Image
                     src="/wireframe.png?height=600&width=800"
@@ -584,7 +584,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Categories Section */}
         <section className="py-24">
@@ -676,12 +676,12 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Coffee Section */}
+        {/* Jamaica Section */}
         <section id="jamaica" className="py-24 bg-[#f8f5f1]">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
               <span className="inline-block rounded-full bg-amber-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-amber-800 mb-4">
-                " " de altura
+                Jamaica de altura
               </span>
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Jamaica</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
@@ -734,140 +734,116 @@ export default function LandingPage() {
             </div>
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              {/* Coffee Product 1 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src="/wireframe.png?height=400&width=600"
-                    alt="Café Lorem"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                  Lorem
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                  <div className="flex items-center gap-1 mb-3">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  </div>
-                  <p className="mb-4 text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-amber-700">$12.99 / lb</span>
-                    <button className="rounded-full bg-amber-50 px-3 py-1.5 text-xs font-medium text-amber-700 transition hover:bg-amber-100">
-                      Ver Detalles
-                    </button>
-                  </div>
-                </div>
-              </div>
+  {/* Producto 1 */}
+  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+    <div className="relative h-64 w-full overflow-hidden">
+      <Image
+        src="/wireframe.png?height=400&width=600"
+        alt="Café Lorem"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
+        Lorem
+      </div>
+    </div>
+    <div className="p-5">
+      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
+      <div className="flex items-center gap-1 mb-2">
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+      </div>
+      <p className="text-sm text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
+      </p>
+    </div>
+  </div>
 
-              {/* Coffee Product 2 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src="/wireframe.png?height=400&width=600"
-                    alt="tipo de"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                  Lorem
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                  <div className="flex items-center gap-1 mb-3">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 text-gray-300" />
-                  </div>
-                  <p className="mb-4 text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-amber-700">$14.99 / lb</span>
-                    <button className="rounded-full bg-amber-50 px-3 py-1.5 text-xs font-medium text-amber-700 transition hover:bg-amber-100">
-                      Ver Detalles
-                    </button>
-                  </div>
-                </div>
-              </div>
+  {/* Producto 2 */}
+  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+    <div className="relative h-64 w-full overflow-hidden">
+      <Image
+        src="/wireframe.png?height=400&width=600"
+        alt="tipo de"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
+        Lorem
+      </div>
+    </div>
+    <div className="p-5">
+      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
+      <div className="flex items-center gap-1 mb-2">
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 text-gray-300" />
+      </div>
+      <p className="text-sm text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
+      </p>
+    </div>
+  </div>
 
-              {/* Coffee Product 3 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src="/wireframe.png?height=400&width=600"
-                    alt="Café Honey"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                  Lorem
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                  <div className="flex items-center gap-1 mb-3">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  </div>
-                  <p className="mb-4 text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-amber-700">$16.99 / lb</span>
-                    <button className="rounded-full bg-amber-50 px-3 py-1.5 text-xs font-medium text-amber-700 transition hover:bg-amber-100">
-                      Ver Detalles
-                    </button>
-                  </div>
-                </div>
-              </div>
+  {/* Producto 3 */}
+  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+    <div className="relative h-64 w-full overflow-hidden">
+      <Image
+        src="/wireframe.png?height=400&width=600"
+        alt="Café Honey"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
+        Lorem
+      </div>
+    </div>
+    <div className="p-5">
+      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
+      <div className="flex items-center gap-1 mb-2">
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+      </div>
+      <p className="text-sm text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
+      </p>
+    </div>
+  </div>
 
-              {/* Coffee Product 4 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src="/wireframe.png?height=400&width=600"
-                    alt="Café Bourbon"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-                  Lorem
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                  <div className="flex items-center gap-1 mb-3">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 text-gray-300" />
-                  </div>
-                  <p className="mb-4 text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-amber-700">$18.99 / lb</span>
-                    <button className="rounded-full bg-amber-50 px-3 py-1.5 text-xs font-medium text-amber-700 transition hover:bg-amber-100">
-                      Ver Detalles
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Producto 4 */}
+  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+    <div className="relative h-64 w-full overflow-hidden">
+      <Image
+        src="/wireframe.png?height=400&width=600"
+        alt="Café Bourbon"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
+        Lorem
+      </div>
+    </div>
+    <div className="p-5">
+      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
+      <div className="flex items-center gap-1 mb-2">
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 text-gray-300" />
+      </div>
+      <p className="text-sm text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
+      </p>
+    </div>
+  </div>
+</div>
 
             <div className="mt-12 text-center">
               <Link
@@ -882,128 +858,126 @@ export default function LandingPage() {
         </section>
 
     {/* Miel Section */}
-        <section id="miel" className="py-24">
-          <div className="container mx-auto px-4">
-            <div className="mb-16 text-center">
-              <span className="inline-block rounded-full bg-yellow-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-yellow-800 mb-4">
-                Tradición Agrícola
-              </span>
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Miel de abeja</h2>
-              <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              Miel Multifloral cosechada con buenas prácticas apícolas, garantizando BPM en la cosecha para obtener miel de óptima calidad y libre de peligros físicos, químicos y microbiológicos que puedan perjudicar la salud de las personas y de las propias abejas.
-              </p>
-            </div>
+<section id="miel" className="py-16 md:py-20">
+  <div className="container mx-auto px-4">
+    <div className="mb-12 text-center">
+      <span className="inline-block rounded-full bg-yellow-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-yellow-800 mb-4">
+        Tradición Agrícola
+      </span>
+      <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Miel de abeja</h2>
+      <p className="mx-auto max-w-3xl text-base text-gray-600 md:text-lg">
+        Miel Multifloral cosechada con buenas prácticas apícolas, garantizando BPM en la cosecha para obtener miel de óptima calidad y libre de peligros.
+      </p>
+    </div>
 
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-              {/* Imágenes pequeñas alineadas a la derecha */}
-              <div className="space-y-8 ml-auto">
-                {/* Grain Product 1 */}
-                <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
-                  <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=200&width=200" alt="Frijol Rojo" fill className="object-cover" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                    <p className="mb-3 text-sm text-gray-600">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam adipisci eius magni, accusamus corporis corrupti aliquam, voluptatibus atque dolor velit explicabo, nam numquam! Veritatis incidunt amet, sed inventore in vel?
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-base font-bold text-yellow-700">$2.99 / lb</span>
-                      <button className="rounded-full bg-yellow-50 px-3 py-1.5 text-xs font-medium text-yellow-700 transition hover:bg-yellow-100">
-                        Ver Detalles
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Grain Product 2 */}
-                <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
-                  <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=200&width=200" alt="Maíz Criollo" fill className="object-cover" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                    <p className="mb-3 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-base font-bold text-yellow-700">$1.99 / lb</span>
-                      <button className="rounded-full bg-yellow-50 px-3 py-1.5 text-xs font-medium text-yellow-700 transition hover:bg-yellow-100">
-                        Ver Detalles
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Grain Product 3 */}
-                <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
-                  <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=200&width=200" alt="Arroz de Secano" fill className="object-cover" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                    <p className="mb-3 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-base font-bold text-yellow-700">$2.49 / lb</span>
-                      <button className="rounded-full bg-yellow-50 px-3 py-1.5 text-xs font-medium text-yellow-700 transition hover:bg-yellow-100">
-                        Ver Detalles
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Grain Product 4 */}
-                <div className="group flex gap-6 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md">
-                  <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=200&width=200" alt="Sorgo" fill className="object-cover" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                    <p className="mb-3 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-base font-bold text-yellow-700">$1.79 / lb</span>
-                      <button className="rounded-full bg-yellow-50 px-3 py-1.5 text-xs font-medium text-yellow-700 transition hover:bg-yellow-100">
-                        Ver Detalles
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Contenedor de imágenes grandes */}
-              <div className="space-y-8">
-                {/* Imagen grande 1 */}
-                <div className="relative overflow-hidden rounded-2xl">
-                  <Image
-                    src="/wireframe.png"
-                    alt="Granos Básicos"
-                    width={800}
-                    height={600}
-                    className="w-full rounded-2xl object-cover"
-                  />
-                </div>
-
-                {/* Imagen grande 2 (Debajo de la primera) */}
-                <div className="relative overflow-hidden rounded-2xl">
-                  <Image
-                    src="/wireframe.png"
-                    alt="Granos Básicos Adicional"
-                    width={800}
-                    height={600}
-                    className="w-full rounded-2xl object-cover"
-                  />
-                </div>
-              </div>
-            </div>
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+      {/* Columna derecha - Productos */}
+      <div className="space-y-5">
+        {/* Producto 1 */}
+        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
+          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
+            <Image 
+              src="/wireframe.png?height=200&width=200" 
+              alt="Miel pura" 
+              fill 
+              className="object-cover" 
+            />
           </div>
-        </section>
+          <div className="flex-1">
+            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel Multifloral</h3>
+            <p className="text-xs text-gray-600 md:text-sm">
+              Miel natural cosechada artesanalmente con técnicas tradicionales.
+            </p>
+          </div>
+        </div>
+
+        {/* Producto 2 */}
+        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
+          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
+            <Image 
+              src="/wireframe.png?height=200&width=200" 
+              alt="Miel de bosque" 
+              fill 
+              className="object-cover" 
+            />
+          </div>
+          <div className="flex-1">
+            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel de Bosque</h3>
+            <p className="text-xs text-gray-600 md:text-sm">
+              Miel oscura con alto contenido de minerales y propiedades medicinales.
+            </p>
+          </div>
+        </div>
+
+        {/* Producto 3 */}
+        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
+          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
+            <Image 
+              src="/wireframe.png?height=200&width=200" 
+              alt="Miel orgánica" 
+              fill 
+              className="object-cover" 
+            />
+          </div>
+          <div className="flex-1">
+            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel Orgánica</h3>
+            <p className="text-xs text-gray-600 md:text-sm">
+              Certificada como producto orgánico, libre de pesticidas y químicos.
+            </p>
+          </div>
+        </div>
+
+        {/* Producto 4 - Añadido */}
+        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
+          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
+            <Image 
+              src="/wireframe.png?height=200&width=200" 
+              alt="Miel cremosa" 
+              fill 
+              className="object-cover" 
+            />
+          </div>
+          <div className="flex-1">
+            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel Cremosa</h3>
+            <p className="text-xs text-gray-600 md:text-sm">
+              Textura suave y cremosa, ideal para untar y endulzar naturalmente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Contenedor de imágenes grandes mejorado */}
+<div className="space-y-6 lg:space-y-8">
+  {/* Imagen grande 1 con efecto hover */}
+  <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
+    <Image
+      src="/wireframe.png"
+      alt="Granos Básicos"
+      fill
+      className="object-cover transition-transform duration-500 group-hover:scale-105"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+  </div>
+
+  {/* Imagen grande 2 con efecto hover */}
+  <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
+    <Image
+      src="/wireframe.png"
+      alt="Granos Básicos Adicional"
+      fill
+      className="object-cover transition-transform duration-500 group-hover:scale-105"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+  </div>
+</div>
+</div>
+  </div>
+</section>
 
 
-        {/* Vegetables Section */}
+        {/* Granos Básicos Section */}
         <section id="granos" className="py-24 bg-green-50">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
@@ -1016,112 +990,94 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Vegetable Product 1 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src="/wireframe.png?height=400&width=600"
-                    alt="Tomates Orgánicos"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-                    Tipo de
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                  <div className="flex items-center gap-1 mb-3">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  </div>
-                  <p className="mb-4 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at doloremque laudantium optio deserunt minima repellendus, quidem ut nihil ullam.
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-green-700">$1.99 / lb</span>
-                    <button className="rounded-full bg-green-50 px-3 py-1.5 text-xs font-medium text-green-700 transition hover:bg-green-100">
-                      Ver Detalles
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {/* Granos Product 1 */}
+  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+    <div className="relative aspect-[4/3] w-full overflow-hidden">
+      <Image
+        src="/wireframe.png?height=400&width=600"
+        alt="granosexample1"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
+        Tipo de
+      </div>
+    </div>
+    <div className="p-5">
+      <h3 className="mb-1 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
+      <div className="flex items-center gap-1 mb-2">
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+      </div>
+      <p className="text-sm text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at doloremque laudantium optio deserunt minima repellendus.
+      </p>
+    </div>
+  </div>
 
-              {/* Vegetable Product 2 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src="/wireframe.png?height=400&width=600"
-                    alt="Cebollas"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-                    Tipo de 
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                  <div className="flex items-center gap-1 mb-3">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 text-gray-300" />
-                  </div>
-                  <p className="mb-4 text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-green-700">$1.49 / lb</span>
-                    <button className="rounded-full bg-green-50 px-3 py-1.5 text-xs font-medium text-green-700 transition hover:bg-green-100">
-                      Ver Detalles
-                    </button>
-                  </div>
-                </div>
-              </div>
+  {/* Granos Product 2 */}
+  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+    <div className="relative aspect-[4/3] w-full overflow-hidden">
+      <Image
+        src="/wireframe.png?height=400&width=600"
+        alt="granosexample2"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
+        Tipo de 
+      </div>
+    </div>
+    <div className="p-5">
+      <h3 className="mb-1 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
+      <div className="flex items-center gap-1 mb-2">
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 text-gray-300" />
+      </div>
+      <p className="text-sm text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
+      </p>
+    </div>
+  </div>
 
-              {/* Vegetable Product 3 */}
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src="/wireframe.png?height=400&width=600"
-                    alt="Chiltomas (Pimientos)"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-                    Tipo de
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-                  <div className="flex items-center gap-1 mb-3">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 text-gray-300" />
-                  </div>
-                  <p className="mb-4 text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-green-700">$1.79 / lb</span>
-                    <button className="rounded-full bg-green-50 px-3 py-1.5 text-xs font-medium text-green-700 transition hover:bg-green-100">
-                      Ver Detalles
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Granos Product 3 */}
+  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
+    <div className="relative aspect-[4/3] w-full overflow-hidden">
+      <Image
+        src="/wireframe.png?height=400&width=600"
+        alt="granosexample3"
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
+        Tipo de
+      </div>
+    </div>
+    <div className="p-5">
+      <h3 className="mb-1 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
+      <div className="flex items-center gap-1 mb-2">
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+        <Star className="h-4 w-4 text-gray-300" />
+      </div>
+      <p className="text-sm text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
+      </p>
+    </div>
+  </div>
+</div>
 
             <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
-              {/* Vegetable Collection 1 */}
+              {/* Granos Collection 1 */}
               <div className="overflow-hidden rounded-2xl bg-white p-6 shadow-md">
                 <h3 className="mb-4 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
                 <p className="mb-6 text-gray-600">
