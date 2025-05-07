@@ -1148,9 +1148,9 @@ export default function LandingPage() {
         }}
       >
         <video 
-          src="/vid-diosas.mp4" 
+          src="/video-wireframe.mp4" 
           controls 
-          poster="/diosas.png"
+          poster="/fotograma-video.jpg"
           className="w-full h-full rounded-2xl object-cover"
         ></video>
       </div>
