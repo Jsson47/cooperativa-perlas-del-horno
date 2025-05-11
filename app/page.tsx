@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 
 
 // Agregar después de los imports
-import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf } from "lucide-react"
+import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf, Bean , Flower, Archive} from "lucide-react"
 
 // Agregar este estilo personalizado para el clip-path
 const styles = {
@@ -44,7 +44,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-2">
             <div className="relative h-10 w-10 overflow-hidden rounded-full bg-green-100">
               <Image
-                src="/wireframe.png?height=40&width=40"
+                src="/Logo.png?height=40&width=40"
                 alt="Logo"
                 width={40}
                 height={40}
@@ -71,16 +71,16 @@ export default function LandingPage() {
                 </Link>
               </li>
               <li>
-                <Link href="#proceso" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
+                <Link href="#jamaica" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
                   Proceso
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#certificaciones"
+                  href="#visitanos"
                   className="text-sm font-medium text-green-800 hover:text-green-600 transition"
                 >
-                  Certificaciones
+                  Visítanos
                 </Link>
               </li>
               <li>
@@ -123,7 +123,7 @@ export default function LandingPage() {
                 <ul className="flex flex-col gap-6">
                   <li>
                     <Link
-                      href="#cafe"
+                      href="#jamaica"
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -132,7 +132,7 @@ export default function LandingPage() {
                   </li>
                   <li>
                     <Link
-                      href="#granos"
+                      href="#Miel de abejas"
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -141,7 +141,7 @@ export default function LandingPage() {
                   </li>
                   <li>
                     <Link
-                      href="#hortalizas"
+                      href="#granos"
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -159,11 +159,11 @@ export default function LandingPage() {
                   </li>
                   <li>
                     <Link
-                      href="#certificaciones"
+                      href="#visitanos"
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Certificaciones
+                      Visítanos
                     </Link>
                   </li>
                   <li className="mt-4">
@@ -197,7 +197,7 @@ export default function LandingPage() {
                   Productos de Nicaragua
                 </span>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-                  Productos Agrícolas de <span className="text-green-600">Estelí</span>
+                  Productos Agrícolas de <span className="text-green-600" style={{ color: '#8E1616' }}>Estelí</span>
                 </h1>
                 <p className="text-lg text-gray-600 mb-8 max-w-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
@@ -222,11 +222,11 @@ export default function LandingPage() {
               {/* Right Images - Modern Grid Layout */}
               <div className="lg:col-span-7 relative">
                 <div className="grid grid-cols-6 grid-rows-5 gap-3 h-[400px]">
-                  {/* Main Image - Coffee */}
+                  {/* Main Image - Jamaica */}
                   <div className="col-span-4 row-span-5 rounded-2xl overflow-hidden shadow-lg relative">
                     <Image
-                      src="/wireframe.png?height=600&width=400"
-                      alt="Café de Estelí"
+                      src="/jamaica-principal.jpg?height=600&width=400"
+                      alt="Rosa de Jamaica"
                       fill
                       className="object-cover"
                     />
@@ -236,22 +236,22 @@ export default function LandingPage() {
                     </div>
                   </div>
 
-                  {/* Top Right Image - Grains */}
+                  {/* Top Right Image - Miel */}
                   <div className="col-span-2 row-span-2 rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/wireframe.png?height=200&width=200"
-                      alt="Granos de Estelí"
+                      src="/miel-principal.jpg?height=200&width=200"
+                      alt="Miel artesanal de Estelí"
                       width={200}
                       height={200}
                       className="w-full h-full object-cover"
                     />
                   </div>
 
-                  {/* Bottom Right Image - Vegetables */}
+                  {/* Bottom Right Image - Granos Basicos */}
                   <div className="col-span-2 row-span-3 rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/wireframe.png?height=300&width=200"
-                      alt="Hortalizas de Estelí"
+                      src="/maiz-frijol-sorgo.jpg?height=300&width=200"
+                      alt="Maíz, frijol, sorgo de Estelí"
                       width={200}
                       height={300}
                       className="w-full h-full object-cover"
@@ -602,21 +602,21 @@ export default function LandingPage() {
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               {/* Category 1 */}
-              <Link href="#cafe" className="group">
+              <Link href="#jamaica" className="group">
                 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="/wireframe.png?height=800&width=600"
-                    alt="Café"
+                    src="/jamaica.jpg?height=800&width=600"
+                    alt="Jamaica"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-8">
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
-                      <Coffee className="h-8 w-8" />
+                      <Flower className="h-8 w-8" />
                     </div>
                     <h3 className="mb-2 text-2xl font-bold text-white">Jamaica</h3>
-                    <p className="mb-4 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p className="mb-4 text-gray-200">6 Mujeres productoras de jamaica venta a nivel nacional</p>
                     <span className="inline-flex items-center text-sm font-medium text-white">
                       Explorar
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -626,21 +626,21 @@ export default function LandingPage() {
               </Link>
 
               {/* Category 2 */}
-              <Link href="#granos" className="group">
+              <Link href="#miel" className="group">
                 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="/wireframe.png?height=800&width=600"
-                    alt="Granos Básicos"
+                    src="/miel.jpg?height=800&width=600"
+                    alt="Miel artesanal"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-8">
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
-                      <Wheat className="h-8 w-8" />
+                      <Archive className="h-8 w-8" />
                     </div>
                     <h3 className="mb-2 text-2xl font-bold text-white">Miel de abeja</h3>
-                    <p className="mb-4 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p className="mb-4 text-gray-200">3 Mujeres Apicultoras Venta a nivel nacional.</p>
                     <span className="inline-flex items-center text-sm font-medium text-white">
                       Explorar
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -650,21 +650,21 @@ export default function LandingPage() {
               </Link>
 
               {/* Category 3 */}
-              <Link href="#hortalizas" className="group">
+              <Link href="#granos" className="group">
                 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="/wireframe.png?height=800&width=600"
-                    alt="Hortalizas"
+                    src="/maiz-frijol-sorgo.jpg?height=800&width=600"
+                    alt="Maiz, frijol, sorgo"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-8">
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-700">
-                      <Leaf className="h-8 w-8" />
+                      <Bean className="h-8 w-8" />
                     </div>
                     <h3 className="mb-2 text-2xl font-bold text-white">Granos Básicos</h3>
-                    <p className="mb-4 text-gray-200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia iste, distinctio</p>
+                    <p className="mb-4 text-gray-200">33 Mujeres Producen granos básicos.</p>
                     <span className="inline-flex items-center text-sm font-medium text-white">
                       Explorar
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -1156,60 +1156,8 @@ export default function LandingPage() {
       </div>
     </section>
 
-        {/* Certifications */}
-        <section id="certificaciones" className="py-24 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="mb-16 text-center">
-              <span className="inline-block rounded-full bg-purple-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-purple-800 mb-4">
-                Garantía de Calidad
-              </span>
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Nuestras Certificaciones</h2>
-              <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque illo numquam minus? Quod provident deserunt quisquam fuga cupiditate incidunt itaque ut omnis. Omnis nesciunt quas suscipit facilis, recusandae odio!
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              {/* Certification 1 */}
-              <div className="rounded-2xl bg-white p-8 shadow-md">
-                <div className="mb-6 h-16 w-16">
-                  <Image
-                    src="/organico.jpg?height=100&width=100"
-                    alt="Certificación Orgánica"
-                    width={64}
-                    height={64}
-                  />
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-gray-900">Certificación Orgánica</h3>
-                <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis alias nesciunt voluptas quae atque vitae saepe veniam, debitis dolorum. Voluptate dicta aperiam reprehenderit autem blanditiis, ipsam omnis tempora impedit.
-                </p>
-              </div>
-
-              {/* Certification 2 */}
-              <div className="rounded-2xl bg-white p-8 shadow-md">
-                <div className="mb-6 h-16 w-16">
-                  <Image src="/wireframe.png?height=100&width=100" alt="Comercio Justo" width={64} height={64} />
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-gray-900">Comercio Justo</h3>
-                <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at aperiam veritatis! Ut harum aliquam inventore ad, in dolorem perspiciatis molestias aliquid totam similique, natus facilis reiciendis eum hic nisi.
-                </p>
-              </div>
-
-              {/* Certification 3 */}
-              <div className="rounded-2xl bg-white p-8 shadow-md">
-                <div className="mb-6 h-16 w-16">
-                  <Image src="/rainforest.jpg?height=100&width=100" alt="Rainforest Alliance" width={64} height={64} />
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-gray-900">Rainforest Alliance</h3>
-                <p className="text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias repellendus numquam expedita doloremque debitis nobis omnis dignissimos nisi officiis, blanditiis obcaecati.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Espacio entre video y testimonios */}
+    <div className="py-10"></div>
 
         {/* Testimonials */}
         <section className="py-24 bg-green-800 text-white">
@@ -1537,6 +1485,115 @@ export default function LandingPage() {
         </section>
       </main>
 
+      {/* Mapa Section */}
+      <section id="visitanos"  className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="mb-12 text-center">
+              <span className="inline-block rounded-full bg-green-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-green-800 mb-4">
+                Ubicación
+              </span>
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Visítanos en Estelí</h2>
+              <p className="mx-auto max-w-3xl text-lg text-gray-600">
+                Estamos ubicados en el Km 152 de la Carretera Panamericana, Estelí, Nicaragua.
+              </p>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+              <div className="aspect-w-16 aspect-h-9 w-full h-96 md:h-[500px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.123456789012!2d-86.556965!3d13.347052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDIwJzQ5LjQiTiA4NsKwMzMnMjUuMSJX!5e0!3m2!1sen!2sni!4v1234567890123!5m2!1sen!2sni"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              
+              <div className="bg-white p-6 md:p-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-700 flex-shrink-0">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="h-6 w-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-medium text-gray-900">Dirección</h4>
+                      <p className="text-gray-600">Km 152 Carretera Panamericana, Estelí, Nicaragua</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-700 flex-shrink-0">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="h-6 w-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-medium text-gray-900">Teléfono</h4>
+                      <p className="text-gray-600">+505 0000 0000</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-700 flex-shrink-0">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="h-6 w-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-medium text-gray-900">Horario</h4>
+                      <p className="text-gray-600">Lunes a Viernes: 8AM - 5PM</p>
+                      <p className="text-gray-600">Sábados: 8AM - 12PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       <footer className="bg-gray-900 py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -1544,7 +1601,7 @@ export default function LandingPage() {
               <div className="mb-6 flex items-center gap-2">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full bg-green-100">
                   <Image
-                    src="/coop.png?height=40&width=40"
+                    src="/Logo.png?height=40&width=40"
                     alt="Logo"
                     width={40}
                     height={40}
@@ -1567,27 +1624,27 @@ export default function LandingPage() {
               <ul className="space-y-4">
                 <li>
                   <Link href="#cafe" className="text-gray-400 transition hover:text-white">
-                  Lorem Ipsum
+                  Rosa de Jamaica
                   </Link>
                 </li>
                 <li>
                   <Link href="#granos" className="text-gray-400 transition hover:text-white">
-                  Lorem Ipsum
+                  Miel de abejas
                   </Link>
                 </li>
                 <li>
                   <Link href="#granos" className="text-gray-400 transition hover:text-white">
-                  Lorem Ipsum
+                  Maíz
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-gray-400 transition hover:text-white">
-                  Lorem Ipsum
+                  Frijol
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-gray-400 transition hover:text-white">
-                  Lorem Ipsum
+                  Sorgo
                   </Link>
                 </li>
               </ul>
@@ -1602,8 +1659,8 @@ export default function LandingPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#certificaciones" className="text-gray-400 transition hover:text-white">
-                    Certificaciones
+                  <Link href="#visitanos" className="text-gray-400 transition hover:text-white">
+                    Visítanos
                   </Link>
                 </li>
                 <li>
