@@ -106,14 +106,14 @@ export default function LandingPage() {
                 <div className="flex items-center gap-2">
                   <div className="relative h-10 w-10 overflow-hidden rounded-full bg-green-100">
                     <Image
-                      src="/placeholder.svg?height=40&width=40"
+                      src="/logo.png?height=40&width=40"
                       alt="Logo"
                       width={40}
                       height={40}
                       className="object-cover"
                     />
                   </div>
-                  <span className="text-xl font-bold text-green-800">Estelí Agrícola</span>
+                  <span className="text-xl font-bold text-green-800">COASPEHO R.L</span>
                 </div>
                 <button className="text-green-800" onClick={() => setIsMenuOpen(false)}>
                   <X className="h-6 w-6" />
@@ -132,11 +132,11 @@ export default function LandingPage() {
                   </li>
                   <li>
                     <Link
-                      href="#Miel de abejas"
+                      href="#miel"
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Miel de abeja
+                      Miel de abejas
                     </Link>
                   </li>
                   <li>
@@ -150,7 +150,7 @@ export default function LandingPage() {
                   </li>
                   <li>
                     <Link
-                      href="#proceso"
+                      href="#jamaica"
                       className="text-lg font-medium text-green-800"
                       onClick={() => setIsMenuOpen(false)}
                     >
