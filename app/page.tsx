@@ -204,7 +204,7 @@ export default function LandingPage() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link
-                    href="#productos"
+                    href="#categorias"
                     className="group rounded-full bg-green-600 px-6 py-3 font-medium text-white transition-all hover:bg-green-500 shadow-sm"
                   >
                     Explorar Productos
@@ -587,7 +587,7 @@ export default function LandingPage() {
         </section> */}
 
         {/* Categories Section */}
-        <section className="py-24">
+        <section id="categorias" className="py-24">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
               <span className="inline-block rounded-full bg-green-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-green-800 mb-4">
