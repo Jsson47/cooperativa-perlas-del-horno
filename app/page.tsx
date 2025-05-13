@@ -51,7 +51,7 @@ export default function LandingPage() {
                 className="object-cover"
               />
             </div>
-            <span className="text-xl font-bold text-green-800">Agropecuaria de Servicios Las Perlas Del Horno R.L.</span>
+            <span className="text-xl font-bold text-green-800" style={{ color: '#0c9c4d' }}>Agropecuaria de Servicios Las Perlas Del Horno R.L.</span>
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
@@ -86,8 +86,7 @@ export default function LandingPage() {
               <li>
                 <Link
                   href="#contacto"
-                  className="rounded-full bg-green-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-green-600 transition shadow-sm"
-                >
+                  className="rounded-full bg-green-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-green-600 transition shadow-sm" >
                   Contacto
                 </Link>
               </li>
@@ -197,7 +196,7 @@ export default function LandingPage() {
                   Productos de Nicaragua
                 </span>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-                  Productos Agrícolas de <span className="text-green-600" style={{ color: '#8E1616' }}>Estelí</span>
+                  Productos Agrícolas de <span className="text-green-600" style={{ color: '#faa530' }}>Estelí</span>
                 </h1>
                 <p className="text-lg text-gray-600 mb-8 max-w-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
@@ -676,465 +675,551 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Jamaica Section */}
-        <section id="jamaica" className="py-24 bg-[#f8f5f1]">
-          <div className="container mx-auto px-4">
-            <div className="mb-16 text-center">
-              <span className="inline-block rounded-full bg-amber-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-amber-800 mb-4">
-                Jamaica de altura
-              </span>
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Jamaica</h2>
-              <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              Rosa de jamaica variedades (Reina Salvadoreña y criolla) en condiciones agroecológicas, garantizando un deshidratado que resalte sus propiedades organolépticas,100 % orgánica implementando las buenas prácticas agrícolas.
-              </p>
-            </div>
-
-            {/* Coffee Tabs */}
-            <div className="mb-12">
-              <div className="flex flex-wrap justify-center gap-2 mb-8">
-                <button
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                    activeTab === "todos" ? "bg-amber-800 text-white" : "bg-amber-100 text-amber-800 hover:bg-amber-200"
-                  }`}
-                  onClick={() => setActiveTab("todos")}
-                >
-                  Todos
-                </button>
-                <button
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                    activeTab === "arabica"
-                      ? "bg-amber-800 text-white"
-                      : "bg-amber-100 text-amber-800 hover:bg-amber-200"
-                  }`}
-                  onClick={() => setActiveTab("arabica")}
-                >
-                  Tipo de " "
-                </button>
-                <button
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                    activeTab === "organico"
-                      ? "bg-amber-800 text-white"
-                      : "bg-amber-100 text-amber-800 hover:bg-amber-200"
-                  }`}
-                  onClick={() => setActiveTab("organico")}
-                >
-                  Tipo de " "
-                </button>
-                <button
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition ${
-                    activeTab === "especial"
-                      ? "bg-amber-800 text-white"
-                      : "bg-amber-100 text-amber-800 hover:bg-amber-200"
-                  }`}
-                  onClick={() => setActiveTab("especial")}
-                >
-                  Tipo de " "
-                </button>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-  {/* Producto 1 */}
-  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-    <div className="relative h-64 w-full overflow-hidden">
-      <Image
-        src="/wireframe.png?height=400&width=600"
-        alt="Café Lorem"
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-        Lorem
-      </div>
-    </div>
-    <div className="p-5">
-      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-      <div className="flex items-center gap-1 mb-2">
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-      </div>
-      <p className="text-sm text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-      </p>
-    </div>
-  </div>
-
-  {/* Producto 2 */}
-  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-    <div className="relative h-64 w-full overflow-hidden">
-      <Image
-        src="/wireframe.png?height=400&width=600"
-        alt="tipo de"
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-        Lorem
-      </div>
-    </div>
-    <div className="p-5">
-      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-      <div className="flex items-center gap-1 mb-2">
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 text-gray-300" />
-      </div>
-      <p className="text-sm text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-      </p>
-    </div>
-  </div>
-
-  {/* Producto 3 */}
-  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-    <div className="relative h-64 w-full overflow-hidden">
-      <Image
-        src="/wireframe.png?height=400&width=600"
-        alt="Café Honey"
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-        Lorem
-      </div>
-    </div>
-    <div className="p-5">
-      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-      <div className="flex items-center gap-1 mb-2">
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-      </div>
-      <p className="text-sm text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-      </p>
-    </div>
-  </div>
-
-  {/* Producto 4 */}
-  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-    <div className="relative h-64 w-full overflow-hidden">
-      <Image
-        src="/wireframe.png?height=400&width=600"
-        alt="Café Bourbon"
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-3 py-1 text-xs font-semibold text-white">
-        Lorem
-      </div>
-    </div>
-    <div className="p-5">
-      <h3 className="mb-2 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-      <div className="flex items-center gap-1 mb-2">
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 text-gray-300" />
-      </div>
-      <p className="text-sm text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-      </p>
-    </div>
-  </div>
-</div>
-
-            <div className="mt-12 text-center">
-              <Link
-                href="#"
-                className="inline-flex items-center rounded-full border border-amber-700 px-6 py-3 text-sm font-medium text-amber-700 transition hover:bg-amber-50"
-              >
-                Ver Todos los Productos
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-        </section>
-
-    {/* Miel Section */}
-<section id="miel" className="py-16 md:py-20">
-  <div className="container mx-auto px-4">
-    <div className="mb-12 text-center">
-      <span className="inline-block rounded-full bg-yellow-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-yellow-800 mb-4">
-        Tradición Agrícola
+        {/* Jamaica Section - Rediseñada */}
+<section id="jamaica" className="py-20 bg-gradient-to-b from-amber-50 to-white">
+  <div className="container mx-auto px-4" >
+    <div className="mb-16 text-center">
+      <span className="inline-block rounded-full bg-amber-200 px-6 py-2 text-sm font-bold uppercase tracking-wider text-amber-900 mb-4 shadow-sm" >
+        Flor de Jamaica 100% Orgánica
       </span>
-      <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Miel de abeja</h2>
-      <p className="mx-auto max-w-3xl text-base text-gray-600 md:text-lg">
-        Miel Multifloral cosechada con buenas prácticas apícolas, garantizando BPM en la cosecha para obtener miel de óptima calidad y libre de peligros.
+      <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl font-serif">
+        Rosa de <span className="text-amber-700" style={{ color: '#8E1616' }}>Jamaica</span>
+      </h2>
+      <p className="mx-auto max-w-3xl text-lg text-gray-600 leading-relaxed">
+        Cultivamos las variedades Reina Salvadoreña y Criolla en condiciones agroecológicas, con deshidratado natural que preserva sus propiedades y sabor intenso.
       </p>
     </div>
 
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-      {/* Columna derecha - Productos */}
-      <div className="space-y-5">
-        {/* Producto 1 */}
-        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
-          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
-            <Image 
-              src="/wireframe.png?height=200&width=200" 
-              alt="Miel pura" 
-              fill 
-              className="object-cover" 
-            />
+    {/* Proceso de Cultivo */}
+    <div className="mb-16 bg-white rounded-2xl p-8 shadow-lg">
+      <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center flex items-center justify-center">
+        <Bean className="w-8 h-8 mr-2 text-amber-600" />
+        Nuestro Proceso Agroecológico
+      </h3>
+      <div className="grid md:grid-cols-3 gap-8">
+        <div className="text-center">
+          <div className="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+            <Bean className="w-8 h-8 text-amber-700" />
           </div>
-          <div className="flex-1">
-            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel Multifloral</h3>
-            <p className="text-xs text-gray-600 md:text-sm">
-              Miel natural cosechada artesanalmente con técnicas tradicionales.
-            </p>
+          <h4 className="font-bold text-lg mb-2">Cultivo Natural</h4>
+          <p className="text-gray-600">Sin pesticidas químicos, usando abonos orgánicos y rotación de cultivos para mantener la tierra fértil.</p>
+        </div>
+        <div className="text-center">
+          <div className="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+            <Bean className="w-8 h-8 text-amber-700" />
+          </div>
+          <h4 className="font-bold text-lg mb-2">Cosecha Manual</h4>
+          <p className="text-gray-600">Seleccionamos las flores en su punto óptimo de maduración, una a una, garantizando la máxima calidad.</p>
+        </div>
+        <div className="text-center">
+          <div className="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+            <Bean className="w-8 h-8 text-amber-700" />
+          </div>
+          <h4 className="font-bold text-lg mb-2">Deshidratado Natural</h4>
+          <p className="text-gray-600">Secado a baja temperatura para conservar nutrientes, color y aroma, manteniendo todas sus propiedades.</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Productos */}
+    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {/* Producto 1 */}
+      <div className="group overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl border border-amber-100">
+        <div className="relative h-64 w-full overflow-hidden">
+          <Image
+            src="/jamaica.jpg"
+            alt="Jamaica Reina Salvadoreña"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-4 py-1 text-xs font-bold text-white shadow-md">
+            Procesando
           </div>
         </div>
-
-        {/* Producto 2 */}
-        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
-          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
-            <Image 
-              src="/wireframe.png?height=200&width=200" 
-              alt="Miel de bosque" 
-              fill 
-              className="object-cover" 
-            />
+        <div className="p-6">
+          <h3 className="mb-2 text-xl font-bold text-gray-900">Reina Salvadoreña</h3>
+          <div className="flex items-center gap-1 mb-3">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+            ))}
           </div>
-          <div className="flex-1">
-            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel de Bosque</h3>
-            <p className="text-xs text-gray-600 md:text-sm">
-              Miel oscura con alto contenido de minerales y propiedades medicinales.
-            </p>
-          </div>
-        </div>
-
-        {/* Producto 3 */}
-        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
-          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
-            <Image 
-              src="/wireframe.png?height=200&width=200" 
-              alt="Miel orgánica" 
-              fill 
-              className="object-cover" 
-            />
-          </div>
-          <div className="flex-1">
-            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel Orgánica</h3>
-            <p className="text-xs text-gray-600 md:text-sm">
-              Certificada como producto orgánico, libre de pesticidas y químicos.
-            </p>
-          </div>
-        </div>
-
-        {/* Producto 4 - Añadido */}
-        <div className="group flex gap-4 rounded-xl bg-white p-3 shadow-sm transition-all hover:shadow-md md:p-4">
-          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg md:h-20 md:w-20">
-            <Image 
-              src="/wireframe.png?height=200&width=200" 
-              alt="Miel cremosa" 
-              fill 
-              className="object-cover" 
-            />
-          </div>
-          <div className="flex-1">
-            <h3 className="mb-1 text-base font-bold text-gray-900 md:text-lg">Miel Cremosa</h3>
-            <p className="text-xs text-gray-600 md:text-sm">
-              Textura suave y cremosa, ideal para untar y endulzar naturalmente.
-            </p>
-          </div>
+          <p className="text-gray-600 mb-4">
+            Variedad exclusiva con flores más grandes y color rojo intenso. Ideal para infusiones gourmet.
+          </p>
         </div>
       </div>
 
-      {/* Contenedor de imágenes grandes mejorado */}
-<div className="space-y-6 lg:space-y-8">
-  {/* Imagen grande 1 con efecto hover */}
-  <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
-    <Image
-      src="/wireframe.png"
-      alt="Granos Básicos"
-      fill
-      className="object-cover transition-transform duration-500 group-hover:scale-105"
-      sizes="(max-width: 768px) 100vw, 50vw"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-  </div>
+      {/* Producto 2 */}
+      <div className="group overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl border border-amber-100">
+        <div className="relative h-64 w-full overflow-hidden">
+          <Image
+            src="/jamaica.jpg"
+            alt="Jamaica Criolla"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute top-4 right-4 rounded-full bg-green-600 px-4 py-1 text-xs font-bold text-white shadow-md">
+            Orgánica
+          </div>
+        </div>
+        <div className="p-6">
+          <h3 className="mb-2 text-xl font-bold text-gray-900">Jamaica Criolla</h3>
+          <div className="flex items-center gap-1 mb-3">
+            {[...Array(4)].map((_, i) => (
+              <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+            ))}
+            <Star className="h-5 w-5 text-gray-300" />
+          </div>
+          <p className="text-gray-600 mb-4">
+            Variedad tradicional con sabor equilibrado entre ácido y floral. Perfecta para aguas frescas.
+          </p>
+        </div>
+      </div>
 
-  {/* Imagen grande 2 con efecto hover */}
-  <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
-    <Image
-      src="/wireframe.png"
-      alt="Granos Básicos Adicional"
-      fill
-      className="object-cover transition-transform duration-500 group-hover:scale-105"
-      sizes="(max-width: 768px) 100vw, 50vw"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-  </div>
-</div>
-</div>
+      {/* Producto 3 */}
+      <div className="group overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl border border-amber-100">
+        <div className="relative h-64 w-full overflow-hidden">
+          <Image
+            src="/jamaica.jpg"
+            alt="Mezcla Especial"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute top-4 right-4 rounded-full bg-purple-600 px-4 py-1 text-xs font-bold text-white shadow-md">
+            Procesando
+          </div>
+        </div>
+        <div className="p-6">
+          <h3 className="mb-2 text-xl font-bold text-gray-900">Mezcla Especial</h3>
+          <div className="flex items-center gap-1 mb-3">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+            ))}
+          </div>
+          <p className="text-gray-600 mb-4">
+            Combinación perfecta de nuestras dos variedades para una experiencia de sabor única.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+{/* Miel Section - Rediseñada */}
+<section id="miel" className="py-20 bg-gradient-to-b from-yellow-50 to-white">
+  <div className="container mx-auto px-4">
+    <div className="mb-16 text-center">
+      <span className="inline-block rounded-full bg-yellow-200 px-6 py-2 text-sm font-bold uppercase tracking-wider text-yellow-900 mb-4 shadow-sm">
+        Miel Pura de Abejas Felices
+      </span>
+      <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl font-serif">
+        Miel <span className="text-yellow-600">de abejas</span>
+      </h2>
+      <p className="mx-auto max-w-3xl text-lg text-gray-600 leading-relaxed">
+        Cosechada con buenas prácticas apícolas, garantizando calidad superior libre de contaminantes físicos, químicos y microbiológicos.
+      </p>
+    </div>
 
-        {/* Granos Básicos Section */}
-        <section id="granos" className="py-24 bg-green-50">
-          <div className="container mx-auto px-4">
-            <div className="mb-16 text-center">
-              <span className="inline-block rounded-full bg-green-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-green-800 mb-4">
-                Frescura y Calidad
-              </span>
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Granos Básicos</h2>
-              <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              Granos básicos (Maíz, Frijol, sorgo) impulsando el rescate de las semillas criollas bajo prácticas agroecológicas y la soberanía alimentaria nutricional.
-              </p>
+    <div className="flex flex-col lg:flex-row gap-10 mb-16">
+      {/* Proceso de producción */}
+      <div className="lg:w-1/2 bg-white rounded-2xl p-8 shadow-lg">
+        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+          <Bean className="w-8 h-8 mr-2 text-yellow-600" />
+          Nuestro Proceso Apícola
+        </h3>
+        
+        <div className="space-y-6">
+          <div className="flex items-start">
+            <div className="bg-yellow-100 rounded-full p-3 mr-4 flex-shrink-0">
+              <Flower className="w-6 h-6 text-yellow-700" />
             </div>
-
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-  {/* Granos Product 1 */}
-  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-    <div className="relative aspect-[4/3] w-full overflow-hidden">
-      <Image
-        src="/wireframe.png?height=400&width=600"
-        alt="granosexample1"
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-        Tipo de
+            <div>
+              <h4 className="font-bold text-lg mb-1">Flora Diversa</h4>
+              <p className="text-gray-600">Nuestras abejas polinizan en bosques nativos con más de 50 especies florales, dando a la miel un perfil único.</p>
+            </div>
+          </div>
+          
+          <div className="flex items-start">
+            <div className="bg-yellow-100 rounded-full p-3 mr-4 flex-shrink-0">
+              <Bean className="w-6 h-6 text-yellow-700" />
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Buenas Prácticas</h4>
+              <p className="text-gray-600">Extracción en frío con materiales inoxidables, filtrado natural y envasado en condiciones de máxima higiene.</p>
+            </div>
+          </div>
+          
+          <div className="flex items-start">
+            <div className="bg-yellow-100 rounded-full p-3 mr-4 flex-shrink-0">
+              <Bean className="w-6 h-6 text-yellow-700" />
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Control de Calidad</h4>
+              <p className="text-gray-600">Análisis periódicos para garantizar pureza, ausencia de antibióticos y conservación de enzimas naturales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Imagen destacada */}
+      <div className="lg:w-1/2 relative rounded-2xl overflow-hidden shadow-lg h-96">
+        <Image
+          src="/miel.jpg"
+          alt="Abejas produciendo miel"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-8">
+          <div className="text-white">
+            <h3 className="text-2xl font-bold mb-2">Apicultura Responsable</h3>
+            <p>Respetamos los ciclos naturales y el bienestar de nuestras abejas.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div className="p-5">
-      <h3 className="mb-1 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-      <div className="flex items-center gap-1 mb-2">
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+
+    {/* Productos de Miel */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Miel 1 */}
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
+        <div className="relative h-48">
+          <Image src="/miel-principal.jpg" alt="Miel Multifloral" fill className="object-cover" />
+        </div>
+        <div className="p-5">
+          <div className="flex justify-between items-start mb-2">
+            <h3 className="font-bold text-lg">Proceso 1</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-3">Color ámbar claro, aroma floral y sabor equilibrado.</p>
+        </div>
       </div>
-      <p className="text-sm text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta at doloremque laudantium optio deserunt minima repellendus.
-      </p>
+      
+      {/* Miel 2 */}
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
+        <div className="relative h-48">
+          <Image src="/miel-principal.jpg" alt="Miel de Bosque" fill className="object-cover" />
+        </div>
+        <div className="p-5">
+          <h3 className="font-bold text-lg mb-2">Proceso 2</h3>
+          <p className="text-gray-600 text-sm mb-3">Color oscuro, rica en minerales y antioxidantes.</p>
+        </div>
+      </div>
+      
+      {/* Miel 3 */}
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
+        <div className="relative h-48">
+          <Image src="/miel-principal.jpg" alt="Miel Cremosa" fill className="object-cover" />
+        </div>
+        <div className="p-5">
+          <h3 className="font-bold text-lg mb-2">Proceso 3</h3>
+          <p className="text-gray-600 text-sm mb-3">Textura suave ideal para untar, cristalizada naturalmente.</p>
+        </div>
+      </div>
+      
+      {/* Miel 4 */}
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
+        <div className="relative h-48">
+          <Image src="/miel-principal.jpg" alt="Miel Orgánica Certificada" fill className="object-cover" />
+        </div>
+        <div className="p-5">
+          <div className="flex justify-between items-start mb-2">
+            <h3 className="font-bold text-lg">Proceso 4</h3>
+            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Certificada</span>
+          </div>
+          <p className="text-gray-600 text-sm mb-3">Producida en zonas libres de pesticidas y químicos.</p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  {/* Granos Product 2 */}
-  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-    <div className="relative aspect-[4/3] w-full overflow-hidden">
-      <Image
-        src="/wireframe.png?height=400&width=600"
-        alt="granosexample2"
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-        Tipo de 
+{/* Granos Básicos Section - Rediseñada */}
+<section id="granos" className="py-20 bg-gradient-to-b from-green-50 to-white">
+  <div className="container mx-auto px-4">
+    <div className="mb-16 text-center">
+      <span className="inline-block rounded-full bg-green-200 px-6 py-2 text-sm font-bold uppercase tracking-wider text-green-900 mb-4 shadow-sm">
+        Soberanía Alimentaria
+      </span>
+      <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl font-serif">
+        Granos <span className="text-green-700">Básicos</span>
+      </h2>
+      <p className="mx-auto max-w-3xl text-lg text-gray-600 leading-relaxed">
+        Rescatamos semillas criollas de maíz, frijol y sorgo mediante prácticas agroecológicas que respetan la tierra y sus ciclos naturales.
+      </p>
+    </div>
+
+    {/* Proceso de Cultivo */}
+    <div className="mb-16">
+      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center flex items-center justify-center">
+        <Wheat className="w-8 h-8 mr-2 text-green-600" />
+        Cultivo Agroecológico
+      </h3>
+      
+      <div className="grid md:grid-cols-3 gap-8">
+        {/* Maíz */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg border border-green-100 hover:shadow-xl transition-shadow">
+          <div className="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+            <Bean className="w-10 h-10 text-green-700" />
+          </div>
+          <h4 className="font-bold text-xl text-center mb-3 text-green-800">Maíz Criollo</h4>
+          <ul className="space-y-2 text-gray-600">
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Variedades nativas adaptadas por generaciones</span>
+            </li>
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Cultivo en milpa con frijol y calabaza</span>
+            </li>
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Cosecha manual en punto óptimo de madurez</span>
+            </li>
+          </ul>
+        </div>
+        
+        {/* Frijol */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg border border-green-100 hover:shadow-xl transition-shadow">
+          <div className="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+            <Bean className="w-10 h-10 text-green-700" />
+          </div>
+          <h4 className="font-bold text-xl text-center mb-3 text-green-800">Frijol Nativo</h4>
+          <ul className="space-y-2 text-gray-600">
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Diversidad de variedades: rojo, negro, bayo</span>
+            </li>
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Asociado con maíz para mejor aprovechamiento</span>
+            </li>
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Secado natural al sol sobre zarandas</span>
+            </li>
+          </ul>
+        </div>
+        
+        {/* Sorgo */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg border border-green-100 hover:shadow-xl transition-shadow">
+          <div className="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+            <Bean className="w-10 h-10 text-green-700" />
+          </div>
+          <h4 className="font-bold text-xl text-center mb-3 text-green-800">Sorgo Criollo</h4>
+          <ul className="space-y-2 text-gray-600">
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Resistente a sequías y suelos pobres</span>
+            </li>
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Usado para harinas, atoles y forraje</span>
+            </li>
+            <li className="flex items-start">
+              <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+              <span>Cosechado con técnicas ancestrales</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div className="p-5">
-      <h3 className="mb-1 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-      <div className="flex items-center gap-1 mb-2">
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 text-gray-300" />
+
+    {/* Productos de Granos */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Maíz */}
+      <div className="group relative overflow-hidden rounded-2xl shadow-xl h-96">
+        <Image
+          src="/maiz-frijol-sorgo.jpg"
+          alt="Maíz Criollo"
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex flex-col justify-end p-8">
+          <h3 className="text-2xl font-bold text-white mb-2">Maíz Criollo</h3>
+          <p className="text-white/90 mb-4">Variedades nativas de colores, alto valor nutricional.</p>
+        </div>
       </div>
-      <p className="text-sm text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-      </p>
+      
+      {/* Frijol */}
+      <div className="group relative overflow-hidden rounded-2xl shadow-xl h-96">
+        <Image
+          src="/maiz-frijol-sorgo.jpg"
+          alt="Frijol Nativo"
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex flex-col justify-end p-8">
+          <h3 className="text-2xl font-bold text-white mb-2">Frijol Nativo</h3>
+          <p className="text-white/90 mb-4">Diversidad de formas, colores y sabores ancestrales.</p>
+        </div>
+      </div>
+      
+      {/* Sorgo */}
+      <div className="group relative overflow-hidden rounded-2xl shadow-xl h-96">
+        <Image
+          src="/maiz-frijol-sorgo.jpg"
+          alt="Sorgo Criollo"
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex flex-col justify-end p-8">
+          <h3 className="text-2xl font-bold text-white mb-2">Sorgo Criollo</h3>
+          <p className="text-white/90 mb-4">Alternativa nutritiva y resistente al cambio climático.</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Colecciones de Granos Básicos */}
+<div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+  {/* Colección Maíz */}
+  <div className="bg-white rounded-2xl p-8 shadow-lg border border-amber-100 hover:shadow-xl transition-shadow">
+    <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+      <Bean className="w-8 h-8 mr-2 text-amber-600" />
+      Maíz Criollo
+    </h3>
+    <p className="text-gray-600 mb-6">
+      Cultivado en milpa con técnicas ancestrales. Nuestro maíz preserva la diversidad genética y el sabor auténtico.
+    </p>
+    
+    <div className="mb-6">
+      <h4 className="font-semibold text-lg text-amber-800 mb-2">Proceso y Cosecha:</h4>
+      <ul className="space-y-2 text-gray-600">
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Siembra en luna llena según tradición</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Cultivo asociado con frijol y calabaza</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Cosecha manual cuando la mazorca está en punto óptimo</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Secado natural al sol sobre petates</span>
+        </li>
+      </ul>
+    </div>
+    
+    {/* Paso a paso del proceso del Maiz  */}
+    <div className="grid grid-cols-2 gap-4 mb-6">
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Cosecha de maíz" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Milpa de maíz" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Maíz secándose" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Variedades de maíz" fill className="object-cover" />
+      </div>
     </div>
   </div>
+  
+  {/* Colección Frijol */}
+  <div className="bg-white rounded-2xl p-8 shadow-lg border border-red-100 hover:shadow-xl transition-shadow">
+    <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+      <Bean className="w-8 h-8 mr-2 text-red-600" />
+      Frijol Nativo
+    </h3>
+    <p className="text-gray-600 mb-6">
+      Diversidad de variedades cultivadas de forma sostenible, cada una con características nutricionales únicas.
+    </p>
+    
+    <div className="mb-6">
+      <h4 className="font-semibold text-lg text-red-800 mb-2">Proceso y Cosecha:</h4>
+      <ul className="space-y-2 text-gray-600">
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Siembra asociada con el maíz para soporte natural</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Crecimiento sin químicos, con abonos verdes</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Cosecha cuando las vainas están secas y crujientes</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Trillado manual para preservar la semilla</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div className="grid grid-cols-2 gap-4 mb-6">
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Cosecha de frijol" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Vainas de frijol" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Frijol secándose" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Variedades de frijol" fill className="object-cover" />
+      </div>
+    </div>
+  
+  </div>
+  
+  {/* Colección Sorgo */}
+  <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100 hover:shadow-xl transition-shadow">
+    <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+      <Bean className="w-8 h-8 mr-2 text-green-600" />
+      Sorgo Criollo
+    </h3>
+    <p className="text-gray-600 mb-6">
+      Cultivo resistente y versátil, ideal para zonas áridas. Base de alimentación tradicional y forraje.
+    </p>
+    
+    <div className="mb-6">
+      <h4 className="font-semibold text-lg text-green-800 mb-2">Proceso y Cosecha:</h4>
+      <ul className="space-y-2 text-gray-600">
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Siembra directa después de las primeras lluvias</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Requiere poca agua y resiste sequías</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Cosecha cuando las panículas están secas</span>
+        </li>
+        <li className="flex items-start">
+          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <span>Trillado y ventilado natural para limpieza</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div className="grid grid-cols-2 gap-4 mb-6">
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Campo de sorgo" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Panículas de sorgo" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Cosecha de sorgo" fill className="object-cover" />
+      </div>
+      <div className="relative h-32 overflow-hidden rounded-lg">
+        <Image src="/maiz-frijol-sorgo.jpg" alt="Grano de sorgo" fill className="object-cover" />
+      </div>
+    </div>
 
-  {/* Granos Product 3 */}
-  <div className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl">
-    <div className="relative aspect-[4/3] w-full overflow-hidden">
-      <Image
-        src="/wireframe.png?height=400&width=600"
-        alt="granosexample3"
-        fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">
-        Tipo de
-      </div>
-    </div>
-    <div className="p-5">
-      <h3 className="mb-1 text-lg font-bold text-gray-900">Lorem Ipsum</h3>
-      <div className="flex items-center gap-1 mb-2">
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        <Star className="h-4 w-4 text-gray-300" />
-      </div>
-      <p className="text-sm text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-      </p>
-    </div>
   </div>
 </div>
 
-            <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
-              {/* Granos Collection 1 */}
-              <div className="overflow-hidden rounded-2xl bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
-                <p className="mb-6 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Lechuga" fill className="object-cover" />
-                  </div>
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Espinaca" fill className="object-cover" />
-                  </div>
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Col" fill className="object-cover" />
-                  </div>
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Acelga" fill className="object-cover" />
-                  </div>
-                </div>
-                <div className="mt-6">
-                  <Link href="#" className="inline-flex items-center text-sm font-medium text-green-700">
-                    Ver Colección Completa
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-
-              {/* Vegetable Collection 2 */}
-              <div className="overflow-hidden rounded-2xl bg-white p-6 shadow-md">
-                <h3 className="mb-4 text-xl font-bold text-gray-900">Lorem Ipsum</h3>
-                <p className="mb-6 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam! Repellendus ut nemo officia molestiae magnam sint!
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Papas" fill className="object-cover" />
-                  </div>
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Zanahorias" fill className="object-cover" />
-                  </div>
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Remolachas" fill className="object-cover" />
-                  </div>
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <Image src="/wireframe.png?height=300&width=300" alt="Yuca" fill className="object-cover" />
-                  </div>
-                </div>
-                <div className="mt-6">
-                  <Link href="#" className="inline-flex items-center text-sm font-medium text-green-700">
-                    Ver Colección Completa
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  </div>
+</section>
 
      {/* Video representativo */}
     <section className="flex justify-center mt-20">
