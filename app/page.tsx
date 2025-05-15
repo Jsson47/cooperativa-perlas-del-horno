@@ -10,28 +10,28 @@ import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf, Bean , Flower, Archive,
 
 // Agregar este estilo personalizado para el clip-path
 const styles = {
-  clipPathHero: {
-    clipPath: "polygon(0 0, 100% 0, 100% 100%, 20% 100%)",
-  },
+clipPathHero: {
+clipPath: "polygon(0 0, 100% 0, 100% 100%, 20% 100%)",
+},
 }
 
 export default function LandingPage() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeTab, setActiveTab] = useState("todos")
-  const [isScrolled, setIsScrolled] = useState(false)
+const [isMenuOpen, setIsMenuOpen] = useState(false)
+const [activeTab, setActiveTab] = useState("todos")
+const [isScrolled, setIsScrolled] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
+useEffect(() => {
+const handleScroll = () => {
+if (window.scrollY > 10) {
+setIsScrolled(true)
+} else {
+setIsScrolled(false)
+}
+}
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+window.addEventListener("scroll", handleScroll)
+return () => window.removeEventListener("scroll", handleScroll)
+}, [])
 
   return (
     <div className="flex min-h-screen flex-col bg-white">
@@ -42,12 +42,12 @@ export default function LandingPage() {
       >
         <div className="container mx-auto flex h-20 items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <div className="relative h-10 w-10 overflow-hidden rounded-full bg-green-100">
+            <div className="relative h-16 w-16 overflow-hidden rounded-full bg-green-100">
               <Image
                 src="/Logo.png?height=40&width=40"
                 alt="Logo"
-                width={40}
-                height={40}
+                width={64}
+                height={64}
                 className="object-cover"
               />
             </div>
@@ -55,6 +55,18 @@ export default function LandingPage() {
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
+               {/* Nuevo botón Inicio */}
+            <li>
+              <Link 
+              href="#" 
+              className="text-sm font-medium text-green-800 hover:text-green-600 transition"
+              onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({top: 0, behavior: 'smooth'});
+            }}>
+                Inicio
+              </Link>
+            </li>
               <li>
                 <Link href="#jamaica" className="text-sm font-medium text-green-800 hover:text-green-600 transition">
                   Jamaica
@@ -103,12 +115,12 @@ export default function LandingPage() {
             <div className="container mx-auto px-4 py-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="relative h-10 w-10 overflow-hidden rounded-full bg-green-100">
+                  <div className="relative h-16 w-16 overflow-hidden rounded-full bg-green-100">
                     <Image
                       src="/logo.png?height=40&width=40"
                       alt="Logo"
-                      width={40}
-                      height={40}
+                      width={64}
+                      height={64}
                       className="object-cover"
                     />
                   </div>
@@ -120,6 +132,20 @@ export default function LandingPage() {
               </div>
               <nav className="mt-10">
                 <ul className="flex flex-col gap-6">
+                  {/* Nuevo botón Inicio para móvil */}
+                  <li>
+                  <Link
+                    href="#"
+                    className="text-lg font-medium text-green-800"
+                    onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                    setIsMenuOpen(false);
+                  }}
+                  >
+                Inicio
+              </Link>
+              </li>
                   <li>
                     <Link
                       href="#jamaica"
