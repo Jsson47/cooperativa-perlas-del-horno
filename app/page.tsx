@@ -108,104 +108,110 @@ return () => window.removeEventListener("scroll", handleScroll)
             <Menu className="h-6 w-6" />
           </button>
         </div>
+      </header>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="fixed inset-0 z-50 bg-white">
-            <div className="container mx-auto px-4 py-6">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="relative h-16 w-16 overflow-hidden rounded-full bg-green-100">
-                    <Image
-                      src="/logo.png?height=40&width=40"
-                      alt="Logo"
-                      width={64}
-                      height={64}
-                      className="object-cover"
-                    />
-                  </div>
-                  <span className="text-xl font-bold text-green-800">COASPEHO R.L</span>
-                </div>
-                <button className="text-green-800" onClick={() => setIsMenuOpen(false)}>
-                  <X className="h-6 w-6" />
-                </button>
-              </div>
-              <nav className="mt-10">
-                <ul className="flex flex-col gap-6">
-                  {/* Nuevo botón Inicio para móvil */}
-                  <li>
-                  <Link
-                    href="#"
-                    className="text-lg font-medium text-green-800"
-                    onClick={(e) => {
-                    e.preventDefault();
-                    window.scrollTo({top: 0, behavior: 'smooth'});
-                    setIsMenuOpen(false);
-                  }}
-                  >
-                Inicio
-              </Link>
-              </li>
-                  <li>
-                    <Link
-                      href="#jamaica"
-                      className="text-lg font-medium text-green-800"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Jamaica
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#miel"
-                      className="text-lg font-medium text-green-800"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Miel de abejas
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#granos"
-                      className="text-lg font-medium text-green-800"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Granos Básicos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#jamaica"
-                      className="text-lg font-medium text-green-800"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Proceso
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#visitanos"
-                      className="text-lg font-medium text-green-800"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Visítanos
-                    </Link>
-                  </li>
-                  <li className="mt-4">
-                    <Link
-                      href="#contacto"
-                      className="inline-block rounded-full bg-green-700 px-6 py-3 text-base font-medium text-white"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Contacto
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+{isMenuOpen && (
+  <div className="fixed inset-0 z-50 bg-white overflow-y-auto"> {/* Agregado overflow-y-auto */}
+    <div className="container mx-auto px-4 py-6 min-h-full flex flex-col"> {/* Agregado flex container */}
+      {/* Encabezado del menú */}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="relative h-16 w-16 overflow-hidden rounded-full bg-green-100">
+            <Image
+              src="/logo.png?height=40&width=40"
+              alt="Logo"
+              width={64}
+              height={64}
+              className="object-cover"
+            />
           </div>
-        )}
-      </header>
+          <span className="text-xl font-bold text-green-800">COASPEHO R.L</span>
+        </div>
+        <button 
+          className="text-green-800" 
+          onClick={() => setIsMenuOpen(false)}
+          aria-label="Cerrar menú"
+        >
+          <X className="h-6 w-6" />
+        </button>
+      </div>
+      
+      {/* Contenido del menú con scroll */}
+      <nav className="mt-10 flex-1"> {/* Agregado flex-1 para ocupar espacio restante */}
+        <ul className="flex flex-col gap-6 pb-8"> {/* Agregado pb-8 para padding bottom */}
+          <li>
+            <Link
+              href="#"
+              className="text-lg font-medium text-green-800"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+                setIsMenuOpen(false);
+              }}
+            >
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#jamaica"
+              className="text-lg font-medium text-green-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Jamaica
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#miel"
+              className="text-lg font-medium text-green-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Miel de abejas
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#granos"
+              className="text-lg font-medium text-green-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Granos Básicos
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#jamaica"
+              className="text-lg font-medium text-green-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Proceso
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#visitanos"
+              className="text-lg font-medium text-green-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Visítanos
+            </Link>
+          </li>
+          <li className="mt-4">
+            <Link
+              href="#contacto"
+              className="inline-block rounded-full bg-green-700 px-6 py-3 text-base font-medium text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contacto
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+)}
 
       <main className="flex-1">
         {/* Hero Section - Modern Compact Design */}
