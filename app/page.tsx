@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 
 
 // Agregar después de los imports
-import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf, Bean , Flower, Archive, Map, MapPin, Phone, Clock10, Navigation} from "lucide-react"
+import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf, Bean , Flower, Archive, Map, MapPin, Phone, Clock10, Navigation, HandHelping} from "lucide-react"
 
 // Agregar este estilo personalizado para el clip-path
 const styles = {
@@ -281,7 +281,7 @@ return () => window.removeEventListener("scroll", handleScroll)
                   {/* Bottom Right Image - Granos Basicos */}
                   <div className="col-span-2 row-span-3 rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/maiz-frijol-sorgo.jpg?height=300&width=200"
+                      src="/granosbasicos.webp?height=300&width=200"
                       alt="Maíz, frijol, sorgo de Estelí"
                       width={200}
                       height={300}
@@ -684,7 +684,7 @@ return () => window.removeEventListener("scroll", handleScroll)
               <Link href="#granos" className="group">
                 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="/maiz-frijol-sorgo.jpg?height=800&width=600"
+                    src="/granosbasicos.webp?height=800&width=600"
                     alt="Maiz, frijol, sorgo"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -737,7 +737,7 @@ return () => window.removeEventListener("scroll", handleScroll)
         </div>
         <div className="text-center">
           <div className="bg-amber-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-            <Bean className="w-8 h-8 text-amber-700" />
+            <HandHelping className="w-8 h-8 text-amber-700" />
           </div>
           <h4 className="font-bold text-lg mb-2">Cosecha Manual</h4>
           <p className="text-gray-600">Seleccionamos las flores en su punto óptimo de maduración, una a una, garantizando la máxima calidad.</p>
@@ -754,56 +754,139 @@ return () => window.removeEventListener("scroll", handleScroll)
 
     {/* Productos */}
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {/* Producto 1 */}
+      {/* Producto 1 - Proceso de Cultivo */}
       <div className="group overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl border border-amber-100">
         <div className="relative h-64 w-full overflow-hidden">
           <Image
-            src="/jamaica.jpg"
-            alt="Jamaica Reina Salvadoreña"
+            src="/jamaica-principal.jpg" 
+            alt="Proceso de cultivo de Jamaica"
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute top-4 right-4 rounded-full bg-amber-600 px-4 py-1 text-xs font-bold text-white shadow-md">
+            Tradicional
+          </div>
+        </div>
+        <div className="p-6">
+          <h3 className="mb-4 text-xl font-bold text-gray-900">Nuestro Proceso de Cultivo</h3>
+          
+          <div className="space-y-4">
+            {/* Paso 1 */}
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Selección de semillas:</span> Usamos variedades autóctonas (Reina Salvadoreña y Criolla), adaptadas al clima local.
+                </p>
+              </div>
+            </div>
+
+            {/* Paso 2 */}
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Siembra sostenible:</span> Sin químicos, con abonos orgánicos y rotación de cultivos para cuidar el suelo.
+                </p>
+              </div>
+            </div>
+
+            {/* Paso 3 */}
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Cosecha manual:</span> Las flores se recolectan en su punto óptimo, respetando su ciclo natural.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Producto 2 - Proceso de Deshidratado */}
+      <div className="group overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl border border-amber-100">
+        <div className="relative h-64 w-full overflow-hidden">
+          <Image
+            src="/jamaica-proceso2.jpg" 
+            alt="Proceso de deshidratado de Jamaica"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute top-4 right-4 rounded-full bg-blue-600 px-4 py-1 text-xs font-bold text-white shadow-md">
             Procesando
           </div>
         </div>
         <div className="p-6">
-          <h3 className="mb-2 text-xl font-bold text-gray-900">Reina Salvadoreña</h3>
-          <div className="flex items-center gap-1 mb-3">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
-            ))}
-          </div>
-          <p className="text-gray-600 mb-4">
-            Variedad exclusiva con flores más grandes y color rojo intenso. Ideal para infusiones gourmet.
-          </p>
-        </div>
-      </div>
+          <h3 className="mb-4 text-xl font-bold text-gray-900">Deshidratado Natural</h3>
+          
+          <div className="space-y-4">
+            {/* Paso 1 */}
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Lavado cuidadoso:</span> Las flores se limpian con agua pura para mantener su pureza.
+                </p>
+              </div>
+            </div>
 
-      {/* Producto 2 */}
-      <div className="group overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl border border-amber-100">
-        <div className="relative h-64 w-full overflow-hidden">
-          <Image
-            src="/jamaica.jpg"
-            alt="Jamaica Criolla"
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-          <div className="absolute top-4 right-4 rounded-full bg-green-600 px-4 py-1 text-xs font-bold text-white shadow-md">
-            Orgánica
+            {/* Paso 2 */}
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Secado al sol:</span> Se colocan en camas de secado bajo condiciones controladas, preservando su color, aroma y nutrientes.
+                </p>
+              </div>
+            </div>
+
+            {/* Paso 3 */}
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Selección rigurosa:</span> Solo las mejores flores pasan al empaque, garantizando calidad superior.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="p-6">
-          <h3 className="mb-2 text-xl font-bold text-gray-900">Jamaica Criolla</h3>
-          <div className="flex items-center gap-1 mb-3">
-            {[...Array(4)].map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
-            ))}
-            <Star className="h-5 w-5 text-gray-300" />
-          </div>
-          <p className="text-gray-600 mb-4">
-            Variedad tradicional con sabor equilibrado entre ácido y floral. Perfecta para aguas frescas.
-          </p>
         </div>
       </div>
 
@@ -817,19 +900,58 @@ return () => window.removeEventListener("scroll", handleScroll)
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute top-4 right-4 rounded-full bg-purple-600 px-4 py-1 text-xs font-bold text-white shadow-md">
-            Procesando
+            Cosechado
           </div>
         </div>
         <div className="p-6">
-          <h3 className="mb-2 text-xl font-bold text-gray-900">Mezcla Especial</h3>
-          <div className="flex items-center gap-1 mb-3">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
-            ))}
+          <h3 className="mb-4 text-xl font-bold text-gray-900">Jamaica Premium</h3>
+          
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">100% orgánica y natural:</span> Libre de pesticidas y aditivos.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Propiedades intactas:</span> Rica en vitamina C, antioxidantes y de sabor intenso.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-600">
+                  <span className="font-semibold text-gray-800">Versátil:</span> Ideal para infusiones, aguas frescas, mermeladas y uso medicinal.
+                </p>
+              </div>
+            </div>
           </div>
-          <p className="text-gray-600 mb-4">
-            Combinación perfecta de nuestras dos variedades para una experiencia de sabor única.
-          </p>
         </div>
       </div>
     </div>
@@ -899,14 +1021,25 @@ return () => window.removeEventListener("scroll", handleScroll)
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-8">
-          <div className="text-white">
-            <h3 className="text-2xl font-bold mb-2">Apicultura Responsable</h3>
-            <p>Respetamos los ciclos naturales y el bienestar de nuestras abejas.</p>
-          </div>
+        {/* Capa de desenfoque */}
+  {/* Efecto de blur e inner shadow (solo en parte inferior) */}
+  <div className="absolute inset-0 flex flex-col justify-end">
+    <div className="h-1/5 w-full 
+        backdrop-blur-sm 
+        [box-shadow:inset_0_0_8px_rgba(0,0,0,0.6)]
+        border-t border-white/10">
+      
+      {/* Gradiente original */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-3">
+        <div className="text-white relative z-10">
+          <h3 className="text-2xl font-bold mb-2">Apicultura Responsable</h3>
+          <p>Respetamos los ciclos naturales y el bienestar de nuestras abejas.</p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+</div>
 
     {/* Productos de Miel */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -990,7 +1123,7 @@ return () => window.removeEventListener("scroll", handleScroll)
       {/* Maíz */}
       <div className="group relative overflow-hidden rounded-2xl shadow-xl h-96">
         <Image
-          src="/maiz-frijol-sorgo.jpg"
+          src="/maiz-1.jpg"
           alt="Maíz Criollo"
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -1004,7 +1137,7 @@ return () => window.removeEventListener("scroll", handleScroll)
       {/* Frijol */}
       <div className="group relative overflow-hidden rounded-2xl shadow-xl h-96">
         <Image
-          src="/maiz-frijol-sorgo.jpg"
+          src="/frijol-1.jpg"
           alt="Frijol Nativo"
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -1018,7 +1151,7 @@ return () => window.removeEventListener("scroll", handleScroll)
       {/* Sorgo */}
       <div className="group relative overflow-hidden rounded-2xl shadow-xl h-96">
         <Image
-          src="/maiz-frijol-sorgo.jpg"
+          src="/sorgo-1.jpg"
           alt="Sorgo Criollo"
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-110"
