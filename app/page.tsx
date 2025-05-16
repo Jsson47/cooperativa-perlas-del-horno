@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 
 
 // Agregar después de los imports
-import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf, Bean , Flower, Archive, Map, MapPin, Phone, Clock10, Navigation, HandHelping} from "lucide-react"
+import { Menu, X, ArrowRight, Star, Coffee, Wheat, Leaf, Bean , Flower, Archive, Map, MapPin, Phone, Clock10, Navigation, HandHelping, HandHeart, HandHelpingIcon, Handshake} from "lucide-react"
 
 // Agregar este estilo personalizado para el clip-path
 const styles = {
@@ -993,7 +993,7 @@ return () => window.removeEventListener("scroll", handleScroll)
           
           <div className="flex items-start">
             <div className="bg-yellow-100 rounded-full p-3 mr-4 flex-shrink-0">
-              <Bean className="w-6 h-6 text-yellow-700" />
+              <Handshake className="w-6 h-6 text-yellow-700" />
             </div>
             <div>
               <h4 className="font-bold text-lg mb-1">Buenas Prácticas</h4>
@@ -1003,7 +1003,7 @@ return () => window.removeEventListener("scroll", handleScroll)
           
           <div className="flex items-start">
             <div className="bg-yellow-100 rounded-full p-3 mr-4 flex-shrink-0">
-              <Bean className="w-6 h-6 text-yellow-700" />
+              <HandHeart className="w-6 h-6 text-yellow-700" />
             </div>
             <div>
               <h4 className="font-bold text-lg mb-1">Control de Calidad</h4>
@@ -1040,59 +1040,185 @@ return () => window.removeEventListener("scroll", handleScroll)
   </div>
 </div>
 </div>
+</div>
 
-    {/* Productos de Miel */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {/* Miel 1 */}
-      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
+    {/* Productos de Miel - Proceso Agroecológico */}
+<section className="py-12 bg-amber-50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center text-amber-800 mb-8">Nuestra Miel: Cosechada con Conciencia</h2>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Miel Multifloral */}
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-200">
         <div className="relative h-48">
-          <Image src="/miel-principal.jpg" alt="Miel Multifloral" fill className="object-cover" />
-        </div>
-        <div className="p-5">
-          <div className="flex justify-between items-start mb-2">
-            <h3 className="font-bold text-lg">Proceso 1</h3>
+          <Image 
+            src="/miel-1.jpg" 
+            alt="Miel Multifloral" 
+            fill 
+            className="object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-16 flex items-end p-3">
+            <span className="text-white font-semibold">Cosecha Primaveral</span>
           </div>
-          <p className="text-gray-600 text-sm mb-3">Color ámbar claro, aroma floral y sabor equilibrado.</p>
         </div>
-      </div>
-      
-      {/* Miel 2 */}
-      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
-        <div className="relative h-48">
-        <Image src="/miel-principal.jpg" alt="Miel de Bosque" fill className="object-cover" />
-        </div>
+        
         <div className="p-5">
-        <h3 className="font-bold text-lg mb-2">Proceso 2</h3>
-        <p className="text-gray-600 text-sm mb-3">Color oscuro, rica en minerales y antioxidantes.</p>
-        </div>
-      </div>
-      
-      {/* Miel 3 */}
-      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
-        <div className="relative h-48">
-          <Image src="/miel-principal.jpg" alt="Miel Cremosa" fill className="object-cover" />
-        </div>
-        <div className="p-5">
-          <h3 className="font-bold text-lg mb-2">Proceso 3</h3>
-          <p className="text-gray-600 text-sm mb-3">Textura suave ideal para untar, cristalizada naturalmente.</p>
-        </div>
-      </div>
-      
-      {/* Miel 4 */}
-      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-yellow-100">
-        <div className="relative h-48">
-          <Image src="/miel-principal.jpg" alt="Miel Orgánica Certificada" fill className="object-cover" />
-        </div>
-        <div className="p-5">
-          <div className="flex justify-between items-start mb-2">
-            <h3 className="font-bold text-lg">Proceso 4</h3>
-            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Certificada</span>
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-400 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">1. Inicio</h3>
           </div>
-          <p className="text-gray-600 text-sm mb-3">Producida en zonas libres de pesticidas y químicos.</p>
+          <p className="text-gray-600 text-sm mb-4">
+            Abejas libres polinizando flores silvestres en bosques nativos, sin exposición a pesticidas.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-500 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">2. Proceso</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Extracción en frío y filtrado natural para preservar enzimas y antioxidantes.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-600 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">3. Producto</h3>
+          </div>
+          <p className="text-gray-600 text-sm">
+            <span className="font-medium text-amber-800">Color ámbar claro</span>, aroma floral complejo y cristalización suave. Ideal para infusiones.
+          </p>
+        </div>
+      </div>
+      
+      {/* Miel de Bosque */}
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-200">
+        <div className="relative h-48">
+          <Image 
+            src="/miel-2.jpg" 
+            alt="Miel de Bosque" 
+            fill 
+            className="object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-16 flex items-end p-3">
+            <span className="text-white font-semibold">Bosques Nativos</span>
+          </div>
+        </div>
+        
+        <div className="p-5">
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-400 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">1. Inicio</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Colmenas en árboles nativos, recolectando néctar de flores silvestres y mielada de roble.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-500 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">2. Proceso</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Maduración lenta en panales, filtrado con mallas de acero inoxidable.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-600 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">3. Producto</h3>
+          </div>
+          <p className="text-gray-600 text-sm">
+            <span className="font-medium text-amber-800">Color oscuro intenso</span>, sabor maltado y alto contenido en minerales. Perfecta para aliños.
+          </p>
+        </div>
+      </div>
+      
+      {/* Miel Cremosa */}
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-200">
+        <div className="relative h-48">
+          <Image 
+            src="/miel-3.jpg" 
+            alt="Miel Cremosa" 
+            fill 
+            className="object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-16 flex items-end p-3">
+            <span className="text-white font-semibold">Textura Sedosa</span>
+          </div>
+        </div>
+        
+        <div className="p-5">
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-400 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">1. Inicio</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Cosecha otoñal de flores tardías con alto contenido en glucosa.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-500 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">2. Proceso</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Cristalización controlada mediante batido artesanal para lograr untabilidad perfecta.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-600 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">3. Producto</h3>
+          </div>
+          <p className="text-gray-600 text-sm">
+            <span className="font-medium text-amber-800">Textura de terciopelo</span>, no gotea y endulza 25% más que la miel líquida. Ideal para pan.
+          </p>
+        </div>
+      </div>
+      
+      {/* Miel Orgánica Certificada */}
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-200 relative">
+        <div className="absolute top-3 right-3 z-10">
+          <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-full shadow-md">Certificada</span>
+        </div>
+        
+        <div className="relative h-48">
+          <Image 
+            src="/miel-jarra.jpg" 
+            alt="Miel Orgánica" 
+            fill 
+            className="object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-16 flex items-end p-3">
+            <span className="text-white font-semibold">100% Orgánica</span>
+          </div>
+        </div>
+        
+        <div className="p-5">
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-400 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">1. Inicio</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Zona protegida de 5km sin cultivos convencionales. Trazabilidad total.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-500 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">2. Proceso</h3>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Extracción en área certificada, análisis microbiológico y envasado en vidrio oscuro.
+          </p>
+          
+          <div className="flex items-center mb-3">
+            <div className="w-3 h-3 bg-amber-600 rounded-full mr-2"></div>
+            <h3 className="font-bold text-lg text-amber-900">3. Producto</h3>
+          </div>
+          <p className="text-gray-600 text-sm">
+            <span className="font-medium text-amber-800">Perfil premium</span>, libre de metales pesados y antibióticos. Certificación USDA Organic.
+          </p>
         </div>
       </div>
     </div>
   </div>
+</section>
+  
 </section>
 
 {/* Granos Básicos Section - Rediseñada */}
@@ -1178,39 +1304,24 @@ return () => window.removeEventListener("scroll", handleScroll)
       <h4 className="font-semibold text-lg text-amber-800 mb-2">Proceso y Cosecha:</h4>
       <ul className="space-y-2 text-gray-600">
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Siembra en luna llena según tradición</span>
         </li>
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Cultivo asociado con frijol y calabaza</span>
         </li>
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Cosecha manual cuando la mazorca está en punto óptimo</span>
         </li>
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Secado natural al sol sobre petates</span>
         </li>
       </ul>
     </div>
-    
-    {/* Paso a paso del proceso del Maiz  */}
-    <div className="grid grid-cols-2 gap-4 mb-6">
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Cosecha de maíz" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Milpa de maíz" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Maíz secándose" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Variedades de maíz" fill className="object-cover" />
-      </div>
-    </div>
+    {/*end frijol */}
   </div>
   
   {/* Colección Frijol */}
@@ -1243,22 +1354,8 @@ return () => window.removeEventListener("scroll", handleScroll)
         </li>
       </ul>
     </div>
-    
-    <div className="grid grid-cols-2 gap-4 mb-6">
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Cosecha de frijol" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Vainas de frijol" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Frijol secándose" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Variedades de frijol" fill className="object-cover" />
-      </div>
-    </div>
-  
+  {/* end sorgo */}
+
   </div>
   
   {/* Colección Sorgo */}
@@ -1274,38 +1371,24 @@ return () => window.removeEventListener("scroll", handleScroll)
       <h4 className="font-semibold text-lg text-green-800 mb-2">Proceso y Cosecha:</h4>
       <ul className="space-y-2 text-gray-600">
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Siembra directa después de las primeras lluvias</span>
         </li>
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Requiere poca agua y resiste sequías</span>
         </li>
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Cosecha cuando las panículas están secas</span>
         </li>
         <li className="flex items-start">
-          <Bean className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+          <Wheat className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
           <span>Trillado y ventilado natural para limpieza</span>
         </li>
       </ul>
     </div>
-    
-    <div className="grid grid-cols-2 gap-4 mb-6">
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Campo de sorgo" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Panículas de sorgo" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Cosecha de sorgo" fill className="object-cover" />
-      </div>
-      <div className="relative h-32 overflow-hidden rounded-lg">
-        <Image src="/maiz-frijol-sorgo.jpg" alt="Grano de sorgo" fill className="object-cover" />
-      </div>
-    </div>
+  {/* end sorgo */}
 
   </div>
 </div>
