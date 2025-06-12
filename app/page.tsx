@@ -1115,7 +1115,7 @@ return () => window.removeEventListener("scroll", handleScroll)
             <div className="ml-3">
               <h4 className="font-bold text-amber-900">Ecosistema Único</h4>
               <p className="text-gray-600 text-sm mt-1">
-                Colmenas en árboles centenarios recolectando mielada de roble y flores de sotobosque.
+                Colmenas in árboles centenarios recolectando mielada de roble y flores de sotobosque.
               </p>
             </div>
           </div>
